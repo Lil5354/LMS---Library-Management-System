@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\file c\u1EE7a th\u1EA3o\\software pj\\lms\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Home.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
+              "RelativeToolTip": "Generate Code\\Home.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAuwKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T06:40:57.031Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Restore.cs [Design]",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Restore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T14:12:15.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddBook.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBook.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
+              "RelativeToolTip": "Generate Code\\AddBook.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAewBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:32:41.436Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
