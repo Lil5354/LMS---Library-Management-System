@@ -23,3 +23,4 @@ D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.OverDueList.res
 D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.Return.resources
 D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.Return2.resources
 D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.Statistic.resources
+D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.borrower.HomeBR.resources

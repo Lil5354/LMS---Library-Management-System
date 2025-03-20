@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="borrower\HomeBR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrower\HomeBR.Designer.cs">
+      <DependentUpon>HomeBR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Generate Code\AddBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,8 +142,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proccess\GetDatabase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="borrower\HomeBR.resx">
+      <DependentUpon>HomeBR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Generate Code\AddBook.resx">
       <DependentUpon>AddBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +198,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -202,6 +213,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default_book_cover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

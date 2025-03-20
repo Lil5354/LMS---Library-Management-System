@@ -31,9 +31,9 @@
             Guna.UI2.WinForms.Guna2Button btnClose;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelLogin = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnEye = new Guna.UI2.WinForms.Guna2Button();
             this.btnHide = new Guna.UI2.WinForms.Guna2Button();
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEye = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
@@ -87,26 +87,6 @@
             this.panelLogin.Size = new System.Drawing.Size(435, 422);
             this.panelLogin.TabIndex = 0;
             // 
-            // btnEye
-            // 
-            this.btnEye.BackColor = System.Drawing.Color.Transparent;
-            this.btnEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEye.BackgroundImage")));
-            this.btnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEye.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEye.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnEye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEye.FillColor = System.Drawing.Color.Transparent;
-            this.btnEye.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEye.ForeColor = System.Drawing.Color.White;
-            this.btnEye.Location = new System.Drawing.Point(349, 261);
-            this.btnEye.Name = "btnEye";
-            this.btnEye.Size = new System.Drawing.Size(25, 20);
-            this.btnEye.TabIndex = 28;
-            this.btnEye.Click += new System.EventHandler(this.btnEye_Click);
-            // 
             // btnHide
             // 
             this.btnHide.BackColor = System.Drawing.Color.Transparent;
@@ -143,6 +123,26 @@
             this.btnRegister.Size = new System.Drawing.Size(159, 56);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
+            // 
+            // btnEye
+            // 
+            this.btnEye.BackColor = System.Drawing.Color.Transparent;
+            this.btnEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEye.BackgroundImage")));
+            this.btnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEye.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEye.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnEye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEye.FillColor = System.Drawing.Color.Transparent;
+            this.btnEye.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEye.ForeColor = System.Drawing.Color.White;
+            this.btnEye.Location = new System.Drawing.Point(349, 261);
+            this.btnEye.Name = "btnEye";
+            this.btnEye.Size = new System.Drawing.Size(25, 20);
+            this.btnEye.TabIndex = 28;
+            this.btnEye.Click += new System.EventHandler(this.btnEye_Click);
             // 
             // btnLogin
             // 
@@ -260,7 +260,7 @@
             this.btnMinSize.FillColor = System.Drawing.Color.Transparent;
             this.btnMinSize.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMinSize.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMinSize.Location = new System.Drawing.Point(976, 31);
+            this.btnMinSize.Location = new System.Drawing.Point(945, 31);
             this.btnMinSize.Name = "btnMinSize";
             this.btnMinSize.Size = new System.Drawing.Size(25, 25);
             this.btnMinSize.TabIndex = 29;
