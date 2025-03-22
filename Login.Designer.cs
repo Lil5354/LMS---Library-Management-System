@@ -31,9 +31,9 @@
             Guna.UI2.WinForms.Guna2Button btnClose;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelLogin = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnEye = new Guna.UI2.WinForms.Guna2Button();
             this.btnHide = new Guna.UI2.WinForms.Guna2Button();
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEye = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
@@ -87,26 +87,6 @@
             this.panelLogin.Size = new System.Drawing.Size(435, 422);
             this.panelLogin.TabIndex = 0;
             // 
-            // btnEye
-            // 
-            this.btnEye.BackColor = System.Drawing.Color.Transparent;
-            this.btnEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEye.BackgroundImage")));
-            this.btnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEye.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEye.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnEye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEye.FillColor = System.Drawing.Color.Transparent;
-            this.btnEye.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEye.ForeColor = System.Drawing.Color.White;
-            this.btnEye.Location = new System.Drawing.Point(349, 261);
-            this.btnEye.Name = "btnEye";
-            this.btnEye.Size = new System.Drawing.Size(25, 20);
-            this.btnEye.TabIndex = 28;
-            this.btnEye.Click += new System.EventHandler(this.btnEye_Click);
-            // 
             // btnHide
             // 
             this.btnHide.BackColor = System.Drawing.Color.Transparent;
@@ -144,6 +124,26 @@
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
             // 
+            // btnEye
+            // 
+            this.btnEye.BackColor = System.Drawing.Color.Transparent;
+            this.btnEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEye.BackgroundImage")));
+            this.btnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEye.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEye.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnEye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEye.FillColor = System.Drawing.Color.Transparent;
+            this.btnEye.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEye.ForeColor = System.Drawing.Color.White;
+            this.btnEye.Location = new System.Drawing.Point(349, 261);
+            this.btnEye.Name = "btnEye";
+            this.btnEye.Size = new System.Drawing.Size(25, 20);
+            this.btnEye.TabIndex = 28;
+            this.btnEye.Click += new System.EventHandler(this.btnEye_Click);
+            // 
             // btnLogin
             // 
             this.btnLogin.Animated = true;
@@ -160,6 +160,7 @@
             this.btnLogin.Size = new System.Drawing.Size(159, 56);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Log in";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPass
             // 
@@ -211,7 +212,7 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(146, 84);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(245, 29);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(252, 31);
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "Read someone like a book";
             // 
@@ -222,7 +223,7 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(38, 42);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(363, 36);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(378, 38);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Library Management System";
             // 

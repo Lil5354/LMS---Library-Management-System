@@ -52,6 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DTLibrary.cs" />
+    <Compile Include="Database\GetDatabase.cs" />
+    <Compile Include="Database\LginLgout.cs" />
     <Compile Include="Generate Code\AddBook.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LMS.Database;
+using LMS.Generate_Code;
 
 namespace LMS
 {
@@ -22,7 +25,13 @@ namespace LMS
             this.StartPosition = FormStartPosition.CenterScreen;
             this.MinimumSize = new Size(800, 450);
         }
-
+        public static class LoginInfo
+        {
+            public static DateTime LoginTime { get; set; }
+            public static string EmployeeName { get; set; }
+            public static string EmployeeID { get; set; }
+            public static SqlDbType StaffID { get; internal set; }
+        }
         private void btnMaxSize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
@@ -73,6 +82,59 @@ namespace LMS
             this.Location = new Point(0, 0);
             btnMinSize.Visible = false;
             btnMaxSize.Visible = true;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string email = txtUsername.Text;
+            string password = txtPass.Text;
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Please enter both email and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            try
+            {
+                string role = LginLgout.Instance.LgManage(email, password);
+                if (role != null)
+                {
+                    // Lưu thời gian đăng nhập
+                    LoginInfo.LoginTime = DateTime.Now;
+
+                    // Lấy thông tin nhân viên từ database sử dụng GetDatabase
+                    string query = "SELECT IDSTAFF, FULLNAME FROM LIBRARIANS WHERE EMAIL = @email AND PASSWORD = @password";
+                    object[] parameters = new object[] { email, password };
+                    DataTable result = GetDatabase.Instance.ExecuteQuery(query, parameters);
+
+                    if (result.Rows.Count > 0)
+                    {
+                        DataRow row = result.Rows[0];
+                        LoginInfo.EmployeeID = row["IDSTAFF"].ToString();
+                        LoginInfo.EmployeeName = row["FULLNAME"].ToString();
+                    }
+                    query = "SELECT IDSTAFF FROM LIBRARIANS where EMAIL = '" + email + "'";
+                    string idstaff = "";
+                    DataTable data = GetDatabase.Instance.ExecuteQuery(query);
+                    foreach (DataRow row in data.Rows)
+                    {
+                        idstaff = row["IDSTAFF"].ToString();
+                        break;
+                    }
+                    Home f = new Home(role, idstaff);
+                    this.Hide();
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid email or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please enter a valid email or password." + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
     }
 }

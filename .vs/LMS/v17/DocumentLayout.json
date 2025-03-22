@@ -1,69 +1,232 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\",
+  "WorkspaceRootPath": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\file c\u1EE7a th\u1EA3o\\software pj\\lms\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\database\\dtlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:database\\dtlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\database\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:database\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\database\\lginlgout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:database\\lginlgout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 1447,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Home.cs",
               "RelativeDocumentMoniker": "Generate Code\\Home.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
-              "RelativeToolTip": "Generate Code\\Home.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAuwKoAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Home.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T06:40:57.031Z",
+              "WhenOpened": "2025-03-20T14:06:35.787Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DTLibrary.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Database\\DTLibrary.cs",
+              "RelativeDocumentMoniker": "Database\\DTLibrary.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Database\\DTLibrary.cs",
+              "RelativeToolTip": "Database\\DTLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:29:17.3Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Restore.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Restore.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Restore.cs",
+              "RelativeToolTip": "Generate Code\\Restore.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAmwEoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T19:30:00.623Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddBook.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBook.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBook.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBook.cs",
+              "RelativeToolTip": "Generate Code\\AddBook.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T19:30:10.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Restore.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Restore.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Restore.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Restore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T19:24:38.367Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Restore.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
-              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs [Design]",
-              "RelativeToolTip": "Generate Code\\Restore.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:12:15.279Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddBook.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
-              "RelativeDocumentMoniker": "Generate Code\\AddBook.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
-              "RelativeToolTip": "Generate Code\\AddBook.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAewBUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "BookList.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\BookList.cs",
+              "RelativeDocumentMoniker": "Generate Code\\BookList.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\BookList.cs",
+              "RelativeToolTip": "Generate Code\\BookList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:32:41.436Z"
+              "WhenOpened": "2025-03-20T14:16:15.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAgwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T16:39:03.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Home.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Home.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Home.cs",
+              "RelativeToolTip": "Generate Code\\Home.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAIAwwJ4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T12:43:52.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T12:38:31.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LginLgout.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Database\\LginLgout.cs",
+              "RelativeDocumentMoniker": "Database\\LginLgout.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Database\\LginLgout.cs",
+              "RelativeToolTip": "Database\\LginLgout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T12:35:53.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetDatabase.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Database\\GetDatabase.cs",
+              "RelativeDocumentMoniker": "Database\\GetDatabase.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Database\\GetDatabase.cs",
+              "RelativeToolTip": "Database\\GetDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T12:33:11.107Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 247,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 247,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

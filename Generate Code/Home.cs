@@ -13,9 +13,13 @@ namespace LMS.Generate_Code
 {
     public partial class Home : Form
     {
-        public Home()
+        private string staffid;
+        private string userRole;
+        public Home(string role, string idstaff)
         {
             InitializeComponent();
+            this.userRole = role;
+            staffid = idstaff;
             SetStyle(ControlStyles.OptimizedDoubleBuffer |
                 ControlStyles.AllPaintingInWmPaint, true);
             this.DoubleBuffered = true;
@@ -239,6 +243,11 @@ namespace LMS.Generate_Code
         {
             Statistic listBookControl = new Statistic();
             AddUserControl(listBookControl);
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

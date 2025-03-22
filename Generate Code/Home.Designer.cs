@@ -42,8 +42,8 @@
             this.menuContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.btnRes = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.btnListBook = new Guna.UI2.WinForms.Guna2Button();
             this.menu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnListBook = new Guna.UI2.WinForms.Guna2Button();
             this.BorrowContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.btnStatistic = new Guna.UI2.WinForms.Guna2Button();
             this.btnReturn = new Guna.UI2.WinForms.Guna2Button();
@@ -135,11 +135,11 @@
             // 
             this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("VNI-Vari", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(489, 17);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(324, 29);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(371, 27);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Library Management System - LMS";
             // 
@@ -189,7 +189,7 @@
             this.btnHomeDashBoard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnHomeDashBoard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnHomeDashBoard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.btnHomeDashBoard.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnHomeDashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnHomeDashBoard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
             this.btnHomeDashBoard.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeDashBoard.Image")));
             this.btnHomeDashBoard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -205,12 +205,12 @@
             // 
             this.menuContainer.Controls.Add(this.btnRes);
             this.menuContainer.Controls.Add(this.btnAdd);
-            this.menuContainer.Controls.Add(this.btnListBook);
             this.menuContainer.Controls.Add(this.menu);
+            this.menuContainer.Controls.Add(this.btnListBook);
             this.menuContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.menuContainer.Location = new System.Drawing.Point(3, 74);
             this.menuContainer.Name = "menuContainer";
-            this.menuContainer.Size = new System.Drawing.Size(204, 65);
+            this.menuContainer.Size = new System.Drawing.Size(204, 253);
             this.menuContainer.TabIndex = 2;
             // 
             // btnRes
@@ -222,7 +222,7 @@
             this.btnRes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnRes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnRes.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnRes.Image = ((System.Drawing.Image)(resources.GetObject("btnRes.Image")));
             this.btnRes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -244,7 +244,7 @@
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnAdd.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -257,6 +257,26 @@
             this.btnAdd.Text = "Add Books";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // menu
+            // 
+            this.menu.Animated = true;
+            this.menu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.menu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.menu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.menu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.menu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
+            this.menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.menu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
+            this.menu.Image = ((System.Drawing.Image)(resources.GetObject("menu.Image")));
+            this.menu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.menu.Location = new System.Drawing.Point(-7, 0);
+            this.menu.Name = "menu";
+            this.menu.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.menu.Size = new System.Drawing.Size(204, 65);
+            this.menu.TabIndex = 4;
+            this.menu.Text = "Library";
+            this.menu.Click += new System.EventHandler(this.menu_Click);
+            // 
             // btnListBook
             // 
             this.btnListBook.Animated = true;
@@ -266,7 +286,7 @@
             this.btnListBook.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnListBook.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnListBook.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnListBook.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnListBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnListBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnListBook.Image = ((System.Drawing.Image)(resources.GetObject("btnListBook.Image")));
             this.btnListBook.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -279,26 +299,6 @@
             this.btnListBook.Text = "List of Books";
             this.btnListBook.Click += new System.EventHandler(this.btnListBook_Click);
             // 
-            // menu
-            // 
-            this.menu.Animated = true;
-            this.menu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.menu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.menu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.menu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.menu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.menu.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
-            this.menu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.menu.Image = ((System.Drawing.Image)(resources.GetObject("menu.Image")));
-            this.menu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.menu.Location = new System.Drawing.Point(0, 0);
-            this.menu.Name = "menu";
-            this.menu.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.menu.Size = new System.Drawing.Size(204, 65);
-            this.menu.TabIndex = 4;
-            this.menu.Text = "Library";
-            this.menu.Click += new System.EventHandler(this.menu_Click);
-            // 
             // BorrowContainer
             // 
             this.BorrowContainer.Controls.Add(this.btnStatistic);
@@ -308,9 +308,9 @@
             this.BorrowContainer.Controls.Add(this.borrow);
             this.BorrowContainer.Controls.Add(this.btnAddBorrowers);
             this.BorrowContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.BorrowContainer.Location = new System.Drawing.Point(3, 145);
+            this.BorrowContainer.Location = new System.Drawing.Point(3, 333);
             this.BorrowContainer.Name = "BorrowContainer";
-            this.BorrowContainer.Size = new System.Drawing.Size(204, 65);
+            this.BorrowContainer.Size = new System.Drawing.Size(204, 377);
             this.BorrowContainer.TabIndex = 6;
             // 
             // btnStatistic
@@ -322,7 +322,7 @@
             this.btnStatistic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnStatistic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnStatistic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnStatistic.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnStatistic.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnStatistic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnStatistic.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistic.Image")));
             this.btnStatistic.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -344,7 +344,7 @@
             this.btnReturn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReturn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReturn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnReturn.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
             this.btnReturn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -366,7 +366,7 @@
             this.btnOverDue.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnOverDue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnOverDue.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnOverDue.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnOverDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnOverDue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnOverDue.Image = ((System.Drawing.Image)(resources.GetObject("btnOverDue.Image")));
             this.btnOverDue.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -388,7 +388,7 @@
             this.btnBrHis.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBrHis.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBrHis.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnBrHis.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnBrHis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnBrHis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnBrHis.Image = ((System.Drawing.Image)(resources.GetObject("btnBrHis.Image")));
             this.btnBrHis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -409,11 +409,11 @@
             this.borrow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.borrow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.borrow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.borrow.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.borrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.borrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
             this.borrow.Image = ((System.Drawing.Image)(resources.GetObject("borrow.Image")));
             this.borrow.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.borrow.Location = new System.Drawing.Point(0, 0);
+            this.borrow.Location = new System.Drawing.Point(-3, 0);
             this.borrow.Name = "borrow";
             this.borrow.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.borrow.Size = new System.Drawing.Size(204, 65);
@@ -430,7 +430,7 @@
             this.btnAddBorrowers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddBorrowers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddBorrowers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnAddBorrowers.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAddBorrowers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnAddBorrowers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnAddBorrowers.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBorrowers.Image")));
             this.btnAddBorrowers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -448,9 +448,9 @@
             this.ManageContainer.Controls.Add(this.Manage);
             this.ManageContainer.Controls.Add(this.btnEmployee);
             this.ManageContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.ManageContainer.Location = new System.Drawing.Point(3, 216);
+            this.ManageContainer.Location = new System.Drawing.Point(3, 716);
             this.ManageContainer.Name = "ManageContainer";
-            this.ManageContainer.Size = new System.Drawing.Size(204, 65);
+            this.ManageContainer.Size = new System.Drawing.Size(204, 133);
             this.ManageContainer.TabIndex = 8;
             // 
             // Manage
@@ -461,11 +461,11 @@
             this.Manage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Manage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Manage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.Manage.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Manage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.Manage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
             this.Manage.Image = ((System.Drawing.Image)(resources.GetObject("Manage.Image")));
             this.Manage.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Manage.Location = new System.Drawing.Point(0, 0);
+            this.Manage.Location = new System.Drawing.Point(-7, -2);
             this.Manage.Name = "Manage";
             this.Manage.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.Manage.Size = new System.Drawing.Size(208, 65);
@@ -482,7 +482,7 @@
             this.btnEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            this.btnEmployee.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployee.Image")));
             this.btnEmployee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -499,7 +499,7 @@
             // 
             this.guna2Panel6.Controls.Add(this.btnLogout);
             this.guna2Panel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.guna2Panel6.Location = new System.Drawing.Point(3, 287);
+            this.guna2Panel6.Location = new System.Drawing.Point(3, 855);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(204, 65);
             this.guna2Panel6.TabIndex = 9;
@@ -512,7 +512,7 @@
             this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.btnLogout.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -557,6 +557,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinSize)).EndInit();
