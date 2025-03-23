@@ -23,28 +23,4 @@ D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.OverDueList.res
 D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.Return.resources
 D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.Return2.resources
 D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.Generate_Code.Statistic.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.csproj.AssemblyReference.cache
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.AddBook.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.AddBorrower.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.AddBorrower2.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.BookList.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.History.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.Home.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.IndividualHis.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.ListEmployee.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.OverDueList.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.Restore.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.Return.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.Return2.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Generate_Code.Statistic.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Login.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.Properties.Resources.resources
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.csproj.GenerateResource.cache
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.csproj.CoreCompileInputs.cache
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.exe
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.pdb
-D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\LMS.exe.config
-D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\LMS.exe
-D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\LMS.pdb
-D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\Guna.UI2.dll
-D:\Douments\GitHub\LMS---Library-Management-System\obj\Debug\LMS.csproj.Up2Date
+D:\FILE CỦA THẢO\Software PJ\LMS\obj\Debug\LMS.borrower.HomeBR.resources

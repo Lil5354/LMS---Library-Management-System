@@ -118,11 +118,32 @@
             this.btnRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.btnRegister.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(232, 332);
+            this.btnRegister.Location = new System.Drawing.Point(38, 330);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(159, 56);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // btnEye
+            // 
+            this.btnEye.BackColor = System.Drawing.Color.Transparent;
+            this.btnEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEye.BackgroundImage")));
+            this.btnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEye.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEye.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnEye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEye.FillColor = System.Drawing.Color.Transparent;
+            this.btnEye.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEye.ForeColor = System.Drawing.Color.White;
+            this.btnEye.Location = new System.Drawing.Point(349, 261);
+            this.btnEye.Name = "btnEye";
+            this.btnEye.Size = new System.Drawing.Size(25, 20);
+            this.btnEye.TabIndex = 28;
+            this.btnEye.Click += new System.EventHandler(this.btnEye_Click);
             // 
             // btnEye
             // 
@@ -155,7 +176,7 @@
             this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(38, 332);
+            this.btnLogin.Location = new System.Drawing.Point(232, 330);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(159, 56);
             this.btnLogin.TabIndex = 4;
@@ -261,7 +282,7 @@
             this.btnMinSize.FillColor = System.Drawing.Color.Transparent;
             this.btnMinSize.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMinSize.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMinSize.Location = new System.Drawing.Point(976, 31);
+            this.btnMinSize.Location = new System.Drawing.Point(945, 31);
             this.btnMinSize.Name = "btnMinSize";
             this.btnMinSize.Size = new System.Drawing.Size(25, 25);
             this.btnMinSize.TabIndex = 29;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LMS.borrower;
 using LMS.Generate_Code;
 
 namespace LMS
@@ -17,7 +18,7 @@ namespace LMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home("Manager","LB001"));
+            Application.Run(new Login());
         }
     }
 }

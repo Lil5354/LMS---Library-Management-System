@@ -13,19 +13,16 @@ namespace LMS.Generate_Code
 {
     public partial class Home : Form
     {
-        private string staffid;
-        private string userRole;
         public Home(string role, string idstaff)
         {
             InitializeComponent();
-            this.userRole = role;
-            staffid = idstaff;
             SetStyle(ControlStyles.OptimizedDoubleBuffer |
                 ControlStyles.AllPaintingInWmPaint, true);
             this.DoubleBuffered = true;
             this.WindowState = FormWindowState.Maximized;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.MinimumSize = new Size(800, 450);
+            SetupClock();
         }
         bool menuExpand = false;
         private void menuTransition_Tick(object sender, EventArgs e)
@@ -245,7 +242,49 @@ namespace LMS.Generate_Code
             AddUserControl(listBookControl);
         }
 
-        private void Home_Load(object sender, EventArgs e)
+        private void lblTime_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void SetupClock()
+        {
+            // Initialize the timer
+            timerClock = new System.Windows.Forms.Timer();
+            timerClock.Interval = 1000; // Update every second
+            timerClock.Tick += TimerClock_Tick;
+
+            // Start the timer
+            timerClock.Start();
+
+            // Update time immediately (don't wait for first tick)
+            UpdateTimeDisplay();
+        }
+        private void UpdateTimeDisplay()
+        {
+            // Get current time
+            DateTime now = DateTime.Now;
+
+            // Update the label with formatted time
+            lblTime.Text = now.ToString("HH:mm"); // 24-hour format
+                                                  // Or use this for 12-hour format with AM/PM
+                                                  // lblTime.Text = now.ToString("hh:mm:ss tt");
+        }
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            if (timerClock != null)
+            {
+                timerClock.Stop();
+                timerClock.Dispose();
+            }
+
+            base.OnFormClosed(e);
+        }
+        private void TimerClock_Tick(object sender, EventArgs e)
+        {
+            // This will be called every second (1000ms)
+            UpdateTimeDisplay();
+        }
+        private void timerClock_Tick(object sender, EventArgs e)
         {
 
         }

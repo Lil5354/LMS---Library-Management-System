@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using LMS.Database;
+using LMS.Proccess;
 
 namespace LMS.Generate_Code
 {
     public partial class Restore : UserControl
     {
-        string query= "";
+        string query = "";
         private int selectedBookID = -1;
-
         public Restore()
         {
             InitializeComponent();
@@ -46,14 +45,15 @@ namespace LMS.Generate_Code
                 B.STATUS;";
             DTLibrary.Instance.LoadList(query, dtgv);
         }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
+        
+        private void btnRefresh_Click_1(object sender, EventArgs e)
         {
             Restore_Load(sender, e);
         }
 
         private void btnRestore_Click(object sender, EventArgs e)
         {
+
             if (selectedBookID == -1)
             {
                 MessageBox.Show("Please select a book to restore.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -83,10 +83,10 @@ namespace LMS.Generate_Code
 
         private void dtgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) 
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dtgv.Rows[e.RowIndex];
-                selectedBookID = Convert.ToInt32(row.Cells["ID"].Value); 
+                selectedBookID = Convert.ToInt32(row.Cells["ID"].Value);
             }
         }
     }

@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Guna.UI2.WinForms.Suite;
-using LMS.Database;
-using static Guna.UI2.Native.WinApi;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using LMS.Proccess;
 
 namespace LMS.Generate_Code
 {
@@ -26,6 +20,7 @@ namespace LMS.Generate_Code
         {
             InitializeComponent();
         }
+
         private void dtgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -49,78 +44,15 @@ namespace LMS.Generate_Code
 
             }
         }
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            query = @"SELECT 
-                B.BOOKID AS [ID],
-                B.TITLE,
-                A.FULLNAME AS AUTHOR,
-                P.NAME AS PUBLISHER,
-                C.NAME AS CATEGORY,
-                B.PUBLICATIONYEAR AS [YEAR],
-                B.BORROWEDCOUNT AS [NO.BORROWED],
-	            B.DATEADDB AS [DATE ADD],
-                CASE 
-                    WHEN EXISTS (
-                        SELECT 1 
-                        FROM BORROWINGTICKETS BT 
-                        WHERE BT.TICKETID = B.BOOKID AND BT.[STATUS] = N'Borrowing'
-                    ) THEN 'Borrowing'
-                    ELSE 'Available'
-                END AS [BORROW STATUS]
-            FROM 
-                BOOKS B
-                INNER JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID
-                INNER JOIN PUBLISHERS P ON B.PUBLISHERID = P.PUBLISHERID
-                INNER JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
-            WHERE B.STATUS = 1;";
-            DTLibrary.Instance.LoadList(query, dtgv);
-            ClearBookListBox();
-        }
 
-        private void btnSearchAdv_Click(object sender, EventArgs e)
+        private void txtDiscription_TextChanged(object sender, EventArgs e)
         {
-            string categoryName = string.IsNullOrEmpty(cbbCateSearch.Text) ? "NULL" : $"N'{cbbCateSearch.Text.Replace("'", "''")}'";
-            string authorName = string.IsNullOrEmpty(cbbAuthorSearch.Text) ? "NULL" : $"N'{cbbAuthorSearch.Text.Replace("'", "''")}'";
-            string publicationYear = string.IsNullOrEmpty(cbbYofPSearch.Text) ? "NULL" : cbbYofPSearch.Text;
-            string query = $@"
-                DECLARE @CategoryName NVARCHAR(100) = {categoryName};
-                DECLARE @AuthorName NVARCHAR(100) = {authorName};
-                DECLARE @PublicationYear INT = {publicationYear};
 
-                SELECT 
-                    B.BOOKID AS ID, 
-                    B.TITLE, 
-                    A.FULLNAME AS AUTHOR, 
-                    P.NAME AS PUBLISHER, 
-                    C.NAME AS CATEGORY, 
-                    B.PUBLICATIONYEAR AS [YEAR], 
-                    B.BORROWEDCOUNT AS [NO.BORROWED], 
-                    B.DATEADDB AS [DATE ADD], 
-                    CASE 
-                        WHEN EXISTS (
-                            SELECT 1 
-                            FROM BORROWINGTICKETS BT 
-                            WHERE BT.BOOKID = B.BOOKID AND BT.[STATUS] = N'Borrowing'
-                        ) THEN 'Borrowing' 
-                        ELSE 'Available' 
-                    END AS [BORROW STATUS]
-                FROM 
-                    BOOKS B
-                    INNER JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID
-                    INNER JOIN PUBLISHERS P ON B.PUBLISHERID = P.PUBLISHERID
-                    INNER JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
-                WHERE 
-                    (@CategoryName IS NULL OR C.NAME = @CategoryName)
-                    AND (@AuthorName IS NULL OR A.FULLNAME = @AuthorName)
-                    AND (@PublicationYear IS NULL OR B.PUBLICATIONYEAR = @PublicationYear)
-                    AND B.STATUS = 1;";
-            DTLibrary.Instance.LoadList(query, dtgv);
-            ClearBookListBox();
         }
 
         private void BookList_Load(object sender, EventArgs e)
         {
+
             q = "SELECT [NAME] FROM CATEGORIES;";
             GetDatabase.Instance.LoadDataToComboBox(q, cbbCategory);
             q = "SELECT [NAME] FROM CATEGORIES;";
@@ -187,35 +119,85 @@ namespace LMS.Generate_Code
             DTLibrary.Instance.LoadList(query, dtgv);
         }
 
+        private void btnSearchAdv_Click(object sender, EventArgs e)
+        {
+            string categoryName = string.IsNullOrEmpty(cbbCateSearch.Text) ? "NULL" : $"N'{cbbCateSearch.Text.Replace("'", "''")}'";
+            string authorName = string.IsNullOrEmpty(cbbAuthorSearch.Text) ? "NULL" : $"N'{cbbAuthorSearch.Text.Replace("'", "''")}'";
+            string publicationYear = string.IsNullOrEmpty(cbbYofPSearch.Text) ? "NULL" : cbbYofPSearch.Text;
+            string query = $@"
+                DECLARE @CategoryName NVARCHAR(100) = {categoryName};
+                DECLARE @AuthorName NVARCHAR(100) = {authorName};
+                DECLARE @PublicationYear INT = {publicationYear};
+
+                SELECT 
+                    B.BOOKID AS ID, 
+                    B.TITLE, 
+                    A.FULLNAME AS AUTHOR, 
+                    P.NAME AS PUBLISHER, 
+                    C.NAME AS CATEGORY, 
+                    B.PUBLICATIONYEAR AS [YEAR], 
+                    B.BORROWEDCOUNT AS [NO.BORROWED], 
+                    B.DATEADDB AS [DATE ADD], 
+                    CASE 
+                        WHEN EXISTS (
+                            SELECT 1 
+                            FROM BORROWINGTICKETS BT 
+                            WHERE BT.BOOKID = B.BOOKID AND BT.[STATUS] = N'Borrowing'
+                        ) THEN 'Borrowing' 
+                        ELSE 'Available' 
+                    END AS [BORROW STATUS]
+                FROM 
+                    BOOKS B
+                    INNER JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID
+                    INNER JOIN PUBLISHERS P ON B.PUBLISHERID = P.PUBLISHERID
+                    INNER JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
+                WHERE 
+                    (@CategoryName IS NULL OR C.NAME = @CategoryName)
+                    AND (@AuthorName IS NULL OR A.FULLNAME = @AuthorName)
+                    AND (@PublicationYear IS NULL OR B.PUBLICATIONYEAR = @PublicationYear)
+                    AND B.STATUS = 1;";
+            DTLibrary.Instance.LoadList(query, dtgv);
+            ClearBookListBox();
+        }
+
+    
+        private void btnLoad_Click_1(object sender, EventArgs e)
+        {
+            query = @"SELECT 
+                B.BOOKID AS [ID],
+                B.TITLE,
+                A.FULLNAME AS AUTHOR,
+                P.NAME AS PUBLISHER,
+                C.NAME AS CATEGORY,
+                B.PUBLICATIONYEAR AS [YEAR],
+                B.BORROWEDCOUNT AS [NO.BORROWED],
+	            B.DATEADDB AS [DATE ADD],
+                CASE 
+                    WHEN EXISTS (
+                        SELECT 1 
+                        FROM BORROWINGTICKETS BT 
+                        WHERE BT.TICKETID = B.BOOKID AND BT.[STATUS] = N'Borrowing'
+                    ) THEN 'Borrowing'
+                    ELSE 'Available'
+                END AS [BORROW STATUS]
+            FROM 
+                BOOKS B
+                INNER JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID
+                INNER JOIN PUBLISHERS P ON B.PUBLISHERID = P.PUBLISHERID
+                INNER JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
+            WHERE B.STATUS = 1;";
+            DTLibrary.Instance.LoadList(query, dtgv);
+            ClearBookListBox();
+        }
+
         private void btnHide_Click(object sender, EventArgs e)
         {
-           
-            if (index == -1 || selectedBookID == -1)
-            {
-                MessageBox.Show("You have not selected a book to hide.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
 
-            // Confirm with the user before hiding the book
-            DialogResult result = MessageBox.Show("Are you sure you want to hide this book?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                // Execute the SQL statement to update STATUS = 0
-                string query = $"UPDATE BOOKS SET STATUS = 0 WHERE BOOKID = {selectedBookID};";
+        }
 
-                try
-                {
-                    GetDatabase.Instance.ExecuteQuery(query);
-                    MessageBox.Show("Book hidden successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    BookList_Load(sender, e);
-                    ClearBookListBox() ;
-                }
-                catch (Exception ex)
-                {
-                    // Handle errors if any
-                    MessageBox.Show("Error hiding the book: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+        private void dtpDA_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void ClearBookListBox()
@@ -227,7 +209,5 @@ namespace LMS.Generate_Code
             txtSearchBook.Text = txtAuthor.Text = txtDescrip.Text = txtBTitle.Text = txtPublisher.Text = txtYearPublic.Text = "";
             dtpDA.Value = DateTime.Now;
         }
-        
-
     }
 }
