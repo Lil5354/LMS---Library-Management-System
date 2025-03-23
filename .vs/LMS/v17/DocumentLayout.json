@@ -3,28 +3,68 @@
   "WorkspaceRootPath": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\file c\u1EE7a th\u1EA3o\\software pj\\lms\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\file c\u1EE7a th\u1EA3o\\software pj\\lms\\borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addborrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addborrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\proccess\\dtlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:proccess\\dtlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\proccess\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:proccess\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\file c\u1EE7a th\u1EA3o\\software pj\\lms\\proccess\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:proccess\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\proccess\\lginlogout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:proccess\\lginlogout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,17 +78,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Home.cs",
               "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
               "RelativeDocumentMoniker": "Generate Code\\Home.cs",
               "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
               "RelativeToolTip": "Generate Code\\Home.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAwwBgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T06:40:57.031Z",
               "IsPinned": true,
@@ -60,20 +100,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetDatabase.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\GetDatabase.cs",
-              "RelativeDocumentMoniker": "Proccess\\GetDatabase.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\GetDatabase.cs",
-              "RelativeToolTip": "Proccess\\GetDatabase.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAqwHwAAAARAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "DTLibrary.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\DTLibrary.cs",
+              "RelativeDocumentMoniker": "Proccess\\DTLibrary.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\DTLibrary.cs",
+              "RelativeToolTip": "Proccess\\DTLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T15:44:00.729Z",
+              "WhenOpened": "2025-03-23T06:29:56.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAASwDMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T06:11:25.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "AddBook.cs [Design]",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBook.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs [Design]",
+              "RelativeToolTip": "Generate Code\\AddBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:16:33.556Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookList.cs [Design]",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs",
+              "RelativeDocumentMoniker": "Generate Code\\BookList.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs [Design]",
+              "RelativeToolTip": "Generate Code\\BookList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:32:49.883Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Home.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T13:33:48.137Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "HomeBR.cs [Design]",
               "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs",
               "RelativeDocumentMoniker": "borrower\\HomeBR.cs",
@@ -85,20 +173,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "HomeBR.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs",
+              "RelativeDocumentMoniker": "borrower\\HomeBR.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs",
+              "RelativeToolTip": "borrower\\HomeBR.cs",
+              "ViewState": "AgIAAEICAAAAAAAAAAAAAAcCAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T13:39:31.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddBorrower.cs [Design]",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBorrower.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBorrower.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBorrower.cs [Design]",
+              "RelativeToolTip": "Generate Code\\AddBorrower.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:31:26.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddBook.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBook.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
+              "RelativeToolTip": "Generate Code\\AddBook.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAAN4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:18:09.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookList.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs",
+              "RelativeDocumentMoniker": "Generate Code\\BookList.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs",
+              "RelativeToolTip": "Generate Code\\BookList.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwMcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:37:35.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Restore.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
+              "RelativeToolTip": "Generate Code\\Restore.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAASwFkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:50:50.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Restore.cs [Design]",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Restore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:50:24.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LginLogout.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\LginLogout.cs",
+              "RelativeDocumentMoniker": "Proccess\\LginLogout.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\LginLogout.cs",
+              "RelativeToolTip": "Proccess\\LginLogout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T06:06:57.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetDatabase.cs",
+              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\GetDatabase.cs",
+              "RelativeDocumentMoniker": "Proccess\\GetDatabase.cs",
+              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\GetDatabase.cs",
+              "RelativeToolTip": "Proccess\\GetDatabase.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJ0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:44:00.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T14:03:06.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T14:03:06.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
@@ -106,31 +290,6 @@
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T13:53:02.324Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeBR.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs",
-              "RelativeDocumentMoniker": "borrower\\HomeBR.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs",
-              "RelativeToolTip": "borrower\\HomeBR.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:39:31.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
-              "RelativeDocumentMoniker": "Generate Code\\Home.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs [Design]",
-              "RelativeToolTip": "Generate Code\\Home.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:33:48.137Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -60,6 +60,8 @@
             this.slidebarTrans = new System.Windows.Forms.Timer(this.components);
             this.BorrowTrans = new System.Windows.Forms.Timer(this.components);
             this.ManageTrans = new System.Windows.Forms.Timer(this.components);
+            this.lblTime = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timerClock = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxSize)).BeginInit();
@@ -544,6 +546,23 @@
             this.ManageTrans.Interval = 5;
             this.ManageTrans.Tick += new System.EventHandler(this.ManageTrans_Tick);
             // 
+            // lblTime
+            // 
+            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Font = new System.Drawing.Font("VNI-Vari", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.White;
+            this.lblTime.Location = new System.Drawing.Point(837, 458);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(317, 169);
+            this.lblTime.TabIndex = 35;
+            this.lblTime.Text = "20:34";
+            this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
+            // 
+            // timerClock
+            // 
+            this.timerClock.Tick += new System.EventHandler(this.timerClock_Tick);
+            // 
             // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -551,6 +570,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1187, 662);
+            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.slidebar);
             this.Controls.Add(this.guna2Panel1);
             this.DoubleBuffered = true;
@@ -570,6 +590,7 @@
             this.ManageContainer.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -605,5 +626,7 @@
         private Guna.UI2.WinForms.Guna2Button btnRes;
         private Guna.UI2.WinForms.Guna2Button btnStatistic;
         private Guna.UI2.WinForms.Guna2Button btnReturn;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTime;
+        private System.Windows.Forms.Timer timerClock;
     }
 }

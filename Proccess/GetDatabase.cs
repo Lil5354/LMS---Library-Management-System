@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace LMS.Proccess
 {
@@ -100,7 +101,61 @@ namespace LMS.Proccess
             }
             return data;
         }
-       
+        public void LoadDataToComboBox(string query, ComboBox comboBox)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        comboBox.Items.Clear();
+                        while (reader.Read())
+                        {
+                            comboBox.Items.Add(reader[0].ToString()); // Add the first column value
+                        }
+                    }
+                }
+                connection.Close();
+            }
+        }
+        public void LoadDataToTextBox(string query, Guna.UI2.WinForms.Guna2TextBox textBox, object[] parameter = null)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    if (parameter != null)
+                    {
+                        string[] listPara = query.Split(' ');
+                        int i = 0;
+                        foreach (string item in listPara)
+                        {
+                            if (item.Contains('@'))
+                            {
+                                command.Parameters.AddWithValue(item, parameter[i]);
+                                i++;
+                            }
+                        }
+                    }
+                    // Thực thi truy vấn và lấy kết quả
+                    object result = command.ExecuteScalar();
+                    if (result != null)
+                    {
+                        // Gán giá trị vào Guna2TextBox
+                        textBox.Text = result.ToString();
+                    }
+                    else
+                    {
+                        // Nếu không có kết quả, xóa nội dung Guna2TextBox
+                        textBox.Text = string.Empty;
+                    }
+                }
+                connection.Close();
+            }
+        }
         public List<KeyValuePair<string, double>> GetChartData(string query, object[] parameter = null)
         {
             var chartData = new List<KeyValuePair<string, double>>();

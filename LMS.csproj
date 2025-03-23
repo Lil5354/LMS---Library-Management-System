@@ -142,7 +142,9 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proccess\DTLibrary.cs" />
     <Compile Include="Proccess\GetDatabase.cs" />
+    <Compile Include="Proccess\LginLogout.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="borrower\HomeBR.resx">
