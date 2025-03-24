@@ -12,7 +12,7 @@ namespace LMS.Proccess
     public class GetDatabase
     {
         private static GetDatabase instance;
-        private string connectionString = "Data Source=LAPTOP-T5G4R7PV\\SQLEXPRESS01;Initial Catalog=LIBRARYM;Integrated Security=True";
+        private string connectionString = "Data Source=KHOAZO\\MSSQLSERVER03;Initial Catalog=LIBRARYM;Integrated Security=True";
 
         public static GetDatabase Instance
         {
@@ -110,7 +110,6 @@ namespace LMS.Proccess
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        comboBox.Items.Clear();
                         while (reader.Read())
                         {
                             comboBox.Items.Add(reader[0].ToString()); // Add the first column value
@@ -181,7 +180,8 @@ namespace LMS.Proccess
                     while (reader.Read())
                     {
                         string key = reader[0].ToString(); // Cột đầu tiên: X (danh mục hoặc tên)
-                        double value = Convert.ToDouble(reader[1]); // Cột thứ hai: Y (giá trị)
+                        double value = reader[1] == DBNull.Value ? 0 : Convert.ToDouble(reader[1]);
+
                         chartData.Add(new KeyValuePair<string, double>(key, value));
                     }
                 }
@@ -189,6 +189,92 @@ namespace LMS.Proccess
             }
             return chartData;
         }
+        public DataTable GetDataTable(string query, object[] parameters = null)
+        {
+            DataTable dataTable = new DataTable();
 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+
+                // Xử lý tham số giống như trong GetChartData
+                if (parameters != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameters[i]);
+                            i++;
+                        }
+                    }
+                }
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+
+                connection.Close();
+            }
+
+            return dataTable;
+        }
+        public List<Dictionary<string, object>> LoadData(string query)
+        {
+            List<Dictionary<string, object>> result = new List<Dictionary<string, object>>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    // Mở kết nối
+                    connection.Open();
+
+                    // Tạo và thực thi lệnh SQL
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Đọc dữ liệu từ SqlDataReader
+                            while (reader.Read())
+                            {
+                                Dictionary<string, object> row = new Dictionary<string, object>();
+
+                                // Lặp qua các cột và thêm vào Dictionary
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    string columnName = reader.GetName(i);
+                                    object value = reader.GetValue(i);
+                                    row[columnName] = value;
+                                }
+
+                                // Thêm dòng dữ liệu vào danh sách kết quả
+                                result.Add(row);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Xử lý lỗi nếu có
+                    Console.WriteLine("Error loading data: " + ex.Message);
+                }
+                finally
+                {
+                    // Đảm bảo kết nối được đóng
+                    if (connection.State == System.Data.ConnectionState.Open)
+                    {
+                        connection.Close();
+                    }
+                }
+            }
+
+            return result;
+        }
+   
     }
 }

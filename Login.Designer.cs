@@ -145,26 +145,6 @@
             this.btnEye.TabIndex = 28;
             this.btnEye.Click += new System.EventHandler(this.btnEye_Click);
             // 
-            // btnEye
-            // 
-            this.btnEye.BackColor = System.Drawing.Color.Transparent;
-            this.btnEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEye.BackgroundImage")));
-            this.btnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEye.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEye.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnEye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEye.FillColor = System.Drawing.Color.Transparent;
-            this.btnEye.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEye.ForeColor = System.Drawing.Color.White;
-            this.btnEye.Location = new System.Drawing.Point(349, 261);
-            this.btnEye.Name = "btnEye";
-            this.btnEye.Size = new System.Drawing.Size(25, 20);
-            this.btnEye.TabIndex = 28;
-            this.btnEye.Click += new System.EventHandler(this.btnEye_Click);
-            // 
             // btnLogin
             // 
             this.btnLogin.Animated = true;

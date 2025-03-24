@@ -44,12 +44,6 @@ namespace LMS.Generate_Code
 
             }
         }
-
-        private void txtDiscription_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BookList_Load(object sender, EventArgs e)
         {
 
@@ -189,15 +183,38 @@ namespace LMS.Generate_Code
             DTLibrary.Instance.LoadList(query, dtgv);
             ClearBookListBox();
         }
-
-        private void btnHide_Click(object sender, EventArgs e)
+        private void btnHide_Click_1(object sender, EventArgs e)
         {
+            if (selectedBookID == -1)
+            {
+                MessageBox.Show("You have not selected a book to hide.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-        }
+            // Confirm with the user before hiding the book
+            DialogResult result = MessageBox.Show("Are you sure you want to hide this book?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // Execute the SQL statement to update STATUS = 0
+                string query = $"UPDATE BOOKS SET STATUS = 0 WHERE BOOKID = {selectedBookID};";
 
-        private void dtpDA_ValueChanged(object sender, EventArgs e)
-        {
+                try
+                {
+                    // Execute the query (assuming you have a DTLibrary class for SQL execution)
+                    GetDatabase.Instance.ExecuteQuery(query);
 
+                    // Show success message
+                    MessageBox.Show("Book hidden successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Refresh the DataGridView to reflect the changes
+                    BookList_Load(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    // Handle errors if any
+                    MessageBox.Show("Error hiding the book: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void ClearBookListBox()

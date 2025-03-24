@@ -1,74 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\",
+  "WorkspaceRootPath": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\listemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\listemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:borrower\\homebr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\individualhis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\individualhis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\file c\u1EE7a th\u1EA3o\\software pj\\lms\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\addborrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addborrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\overduelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\overduelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\individualhis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\individualhis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\generate code\\addborrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\addborrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addborrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\proccess\\dtlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\proccess\\dtlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:proccess\\dtlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\proccess\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\listemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\listemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\statistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\statistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\proccess\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:proccess\\getdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\statistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\statistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\proccess\\lginlogout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:proccess\\lginlogout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|d:\\douments\\github\\lms---library-management-system\\generate code\\addborrower.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\addborrower.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\statistic.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\statistic.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\overduelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\overduelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\return2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\return2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|D:\\Douments\\GitHub\\LMS---Library-Management-System\\generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986BE0BE-5C66-43CE-A206-59ED922EDD82}|LMS.csproj|solutionrelative:generate code\\restore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,21 +89,229 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 153,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Home.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
+              "DocumentIndex": 13,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Home.cs",
               "RelativeDocumentMoniker": "Generate Code\\Home.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
-              "RelativeToolTip": "Generate Code\\Home.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAwwBgAAAAZAAAAAAAAAA==",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Home.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T06:40:57.031Z",
+              "WhenOpened": "2025-03-23T13:52:27.832Z",
               "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddBorrower.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBorrower.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBorrower.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBorrower.cs [Design]",
+              "RelativeToolTip": "Generate Code\\AddBorrower.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:53:03.107Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddBorrower.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBorrower.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBorrower.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBorrower.cs",
+              "RelativeToolTip": "Generate Code\\AddBorrower.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAUwOoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:19:42.556Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookList.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\BookList.cs",
+              "RelativeDocumentMoniker": "Generate Code\\BookList.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\BookList.cs",
+              "RelativeToolTip": "Generate Code\\BookList.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAADwv7gAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:11:59.715Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Return2.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Return2.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Return2.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Return2.cs",
+              "RelativeToolTip": "Generate Code\\Return2.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAUwHYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T20:19:33.207Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "History.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\History.cs",
+              "RelativeDocumentMoniker": "Generate Code\\History.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\History.cs",
+              "RelativeToolTip": "Generate Code\\History.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwFQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T16:57:30.202Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OverDueList.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\OverDueList.cs",
+              "RelativeDocumentMoniker": "Generate Code\\OverDueList.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\OverDueList.cs",
+              "RelativeToolTip": "Generate Code\\OverDueList.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T19:18:28.769Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Statistic.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Statistic.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Statistic.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Statistic.cs",
+              "RelativeToolTip": "Generate Code\\Statistic.cs",
+              "ViewState": "AgIAAPsCAAAAAAAAAAAuwNQCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T17:58:23.202Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Statistic.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Statistic.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Statistic.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Statistic.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Statistic.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T17:56:20.16Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IndividualHis.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\IndividualHis.cs",
+              "RelativeDocumentMoniker": "Generate Code\\IndividualHis.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\IndividualHis.cs",
+              "RelativeToolTip": "Generate Code\\IndividualHis.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T20:56:05.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IndividualHis.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\IndividualHis.cs",
+              "RelativeDocumentMoniker": "Generate Code\\IndividualHis.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\IndividualHis.cs [Design]",
+              "RelativeToolTip": "Generate Code\\IndividualHis.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T20:56:02.671Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "History.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\History.cs",
+              "RelativeDocumentMoniker": "Generate Code\\History.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\History.cs [Design]",
+              "RelativeToolTip": "Generate Code\\History.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T20:56:00.206Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListEmployee.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\ListEmployee.cs",
+              "RelativeDocumentMoniker": "Generate Code\\ListEmployee.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\ListEmployee.cs",
+              "RelativeToolTip": "Generate Code\\ListEmployee.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAuwNkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T20:07:29.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListEmployee.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\ListEmployee.cs",
+              "RelativeDocumentMoniker": "Generate Code\\ListEmployee.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\ListEmployee.cs [Design]",
+              "RelativeToolTip": "Generate Code\\ListEmployee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T19:43:57.314Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddBorrower.Designer.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBorrower.Designer.cs",
+              "RelativeDocumentMoniker": "Generate Code\\AddBorrower.Designer.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\AddBorrower.Designer.cs",
+              "RelativeToolTip": "Generate Code\\AddBorrower.Designer.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAAAqwDUBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T18:41:12.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetDatabase.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Proccess\\GetDatabase.cs",
+              "RelativeDocumentMoniker": "Proccess\\GetDatabase.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Proccess\\GetDatabase.cs",
+              "RelativeToolTip": "Proccess\\GetDatabase.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAUwMgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T18:25:51.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DTLibrary.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Proccess\\DTLibrary.cs",
+              "RelativeDocumentMoniker": "Proccess\\DTLibrary.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Proccess\\DTLibrary.cs",
+              "RelativeToolTip": "Proccess\\DTLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T18:25:50.781Z",
               "EditorCaption": ""
             },
             {
@@ -99,198 +319,64 @@
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DTLibrary.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\DTLibrary.cs",
-              "RelativeDocumentMoniker": "Proccess\\DTLibrary.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\DTLibrary.cs",
-              "RelativeToolTip": "Proccess\\DTLibrary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:29:56.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAASwDMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T06:11:25.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddBook.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
-              "RelativeDocumentMoniker": "Generate Code\\AddBook.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs [Design]",
-              "RelativeToolTip": "Generate Code\\AddBook.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:16:33.556Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookList.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs",
-              "RelativeDocumentMoniker": "Generate Code\\BookList.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs [Design]",
-              "RelativeToolTip": "Generate Code\\BookList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:32:49.883Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs",
-              "RelativeDocumentMoniker": "Generate Code\\Home.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Home.cs [Design]",
-              "RelativeToolTip": "Generate Code\\Home.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:33:48.137Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeBR.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs",
-              "RelativeDocumentMoniker": "borrower\\HomeBR.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs [Design]*",
-              "RelativeToolTip": "borrower\\HomeBR.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T14:10:29.757Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeBR.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs",
-              "RelativeDocumentMoniker": "borrower\\HomeBR.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\borrower\\HomeBR.cs*",
-              "RelativeToolTip": "borrower\\HomeBR.cs*",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAcCAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:39:31.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AddBorrower.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBorrower.cs",
-              "RelativeDocumentMoniker": "Generate Code\\AddBorrower.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBorrower.cs [Design]",
-              "RelativeToolTip": "Generate Code\\AddBorrower.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:31:26.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddBook.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
-              "RelativeDocumentMoniker": "Generate Code\\AddBook.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\AddBook.cs",
-              "RelativeToolTip": "Generate Code\\AddBook.cs",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAAAN4AAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:18:09.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookList.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs",
-              "RelativeDocumentMoniker": "Generate Code\\BookList.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\BookList.cs",
-              "RelativeToolTip": "Generate Code\\BookList.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwMcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:37:35.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Restore.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
-              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
-              "RelativeToolTip": "Generate Code\\Restore.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAASwFkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:50:50.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Restore.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs",
-              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Generate Code\\Restore.cs [Design]",
-              "RelativeToolTip": "Generate Code\\Restore.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:50:24.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LginLogout.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\LginLogout.cs",
-              "RelativeDocumentMoniker": "Proccess\\LginLogout.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\LginLogout.cs",
-              "RelativeToolTip": "Proccess\\LginLogout.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T06:06:57.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GetDatabase.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\GetDatabase.cs",
-              "RelativeDocumentMoniker": "Proccess\\GetDatabase.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Proccess\\GetDatabase.cs",
-              "RelativeToolTip": "Proccess\\GetDatabase.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJ0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T15:44:00.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T14:03:06.99Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\FILE C\u1EE6A TH\u1EA2O\\Software PJ\\LMS\\Login.cs [Design]",
-              "RelativeToolTip": "Login.cs [Design]",
+              "Title": "Statistic.Designer.cs",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Statistic.Designer.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Statistic.Designer.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Statistic.Designer.cs",
+              "RelativeToolTip": "Generate Code\\Statistic.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:53:02.324Z",
+              "WhenOpened": "2025-03-24T18:06:43.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OverDueList.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\OverDueList.cs",
+              "RelativeDocumentMoniker": "Generate Code\\OverDueList.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\OverDueList.cs [Design]",
+              "RelativeToolTip": "Generate Code\\OverDueList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T17:57:49.217Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Restore.cs [Design]",
+              "DocumentMoniker": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Restore.cs",
+              "RelativeDocumentMoniker": "Generate Code\\Restore.cs",
+              "ToolTip": "D:\\Douments\\GitHub\\LMS---Library-Management-System\\Generate Code\\Restore.cs [Design]",
+              "RelativeToolTip": "Generate Code\\Restore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T17:56:18.137Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 189,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 98,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

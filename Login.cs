@@ -34,7 +34,8 @@ namespace LMS
             public static string ReaderID { get; set; }
             public static string ReaderName { get; set; }
             public static string UserType { get; set; } // "Librarian" or "Reader"
-            public static SqlDbType StaffID { get; internal set; }
+            public static string StaffID { get; set; }
+           
         }
 
         private void btnMaxSize_Click(object sender, EventArgs e)
@@ -121,6 +122,7 @@ namespace LMS
                         LoginInfo.EmployeeID = row["IDSTAFF"].ToString();
                         LoginInfo.EmployeeName = row["FULLNAME"].ToString();
                         LoginInfo.UserType = "Librarian";
+                        LoginInfo.StaffID = row["IDSTAFF"].ToString();
                     }
 
                     string idstaff = "";

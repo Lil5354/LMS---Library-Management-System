@@ -212,7 +212,7 @@
             this.menuContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.menuContainer.Location = new System.Drawing.Point(3, 74);
             this.menuContainer.Name = "menuContainer";
-            this.menuContainer.Size = new System.Drawing.Size(204, 253);
+            this.menuContainer.Size = new System.Drawing.Size(204, 66);
             this.menuContainer.TabIndex = 2;
             // 
             // btnRes
@@ -271,10 +271,10 @@
             this.menu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
             this.menu.Image = ((System.Drawing.Image)(resources.GetObject("menu.Image")));
             this.menu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.menu.Location = new System.Drawing.Point(-7, 0);
+            this.menu.Location = new System.Drawing.Point(-3, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.menu.Size = new System.Drawing.Size(204, 65);
+            this.menu.Size = new System.Drawing.Size(204, 66);
             this.menu.TabIndex = 4;
             this.menu.Text = "Library";
             this.menu.Click += new System.EventHandler(this.menu_Click);
@@ -310,7 +310,7 @@
             this.BorrowContainer.Controls.Add(this.borrow);
             this.BorrowContainer.Controls.Add(this.btnAddBorrowers);
             this.BorrowContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.BorrowContainer.Location = new System.Drawing.Point(3, 333);
+            this.BorrowContainer.Location = new System.Drawing.Point(3, 146);
             this.BorrowContainer.Name = "BorrowContainer";
             this.BorrowContainer.Size = new System.Drawing.Size(204, 377);
             this.BorrowContainer.TabIndex = 6;
@@ -415,7 +415,7 @@
             this.borrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
             this.borrow.Image = ((System.Drawing.Image)(resources.GetObject("borrow.Image")));
             this.borrow.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.borrow.Location = new System.Drawing.Point(-3, 0);
+            this.borrow.Location = new System.Drawing.Point(-3, -3);
             this.borrow.Name = "borrow";
             this.borrow.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.borrow.Size = new System.Drawing.Size(204, 65);
@@ -450,7 +450,7 @@
             this.ManageContainer.Controls.Add(this.Manage);
             this.ManageContainer.Controls.Add(this.btnEmployee);
             this.ManageContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.ManageContainer.Location = new System.Drawing.Point(3, 716);
+            this.ManageContainer.Location = new System.Drawing.Point(3, 529);
             this.ManageContainer.Name = "ManageContainer";
             this.ManageContainer.Size = new System.Drawing.Size(204, 133);
             this.ManageContainer.TabIndex = 8;
@@ -501,7 +501,7 @@
             // 
             this.guna2Panel6.Controls.Add(this.btnLogout);
             this.guna2Panel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.guna2Panel6.Location = new System.Drawing.Point(3, 855);
+            this.guna2Panel6.Location = new System.Drawing.Point(3, 668);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(204, 65);
             this.guna2Panel6.TabIndex = 9;
@@ -550,11 +550,11 @@
             // 
             this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("VNI-Vari", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.White;
             this.lblTime.Location = new System.Drawing.Point(837, 458);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(317, 169);
+            this.lblTime.Size = new System.Drawing.Size(318, 143);
             this.lblTime.TabIndex = 35;
             this.lblTime.Text = "20:34";
             this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
@@ -577,7 +577,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Home";
-            this.Load += new System.EventHandler(this.Home_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinSize)).EndInit();

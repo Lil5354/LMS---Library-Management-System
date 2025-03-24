@@ -4,18 +4,22 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using static LMS.Login;
 
 namespace LMS.Generate_Code
 {
     public partial class Home : Form
     {
+        private string idstaff;
         public Home(string role, string idstaff)
         {
             InitializeComponent();
+            this.idstaff = idstaff ?? LoginInfo.StaffID;
             SetStyle(ControlStyles.OptimizedDoubleBuffer |
                 ControlStyles.AllPaintingInWmPaint, true);
             this.DoubleBuffered = true;
@@ -23,6 +27,7 @@ namespace LMS.Generate_Code
             this.StartPosition = FormStartPosition.CenterScreen;
             this.MinimumSize = new Size(800, 450);
             SetupClock();
+            LoginInfo.StaffID = "LB001";
         }
         bool menuExpand = false;
         private void menuTransition_Tick(object sender, EventArgs e)

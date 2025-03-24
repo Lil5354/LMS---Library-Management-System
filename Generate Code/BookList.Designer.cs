@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookList));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BRSTATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtpDA = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnHide = new Guna.UI2.WinForms.Guna2Button();
@@ -101,7 +101,6 @@
             this.dtpDA.Size = new System.Drawing.Size(159, 36);
             this.dtpDA.TabIndex = 35;
             this.dtpDA.Value = new System.DateTime(2025, 3, 22, 20, 38, 21, 961);
-            this.dtpDA.ValueChanged += new System.EventHandler(this.dtpDA_ValueChanged);
             // 
             // btnHide
             // 
@@ -120,6 +119,7 @@
             this.btnHide.Size = new System.Drawing.Size(136, 45);
             this.btnHide.TabIndex = 34;
             this.btnHide.Text = "Hide";
+            this.btnHide.Click += new System.EventHandler(this.btnHide_Click_1);
             // 
             // txtDescrip
             // 
@@ -369,7 +369,7 @@
             this.DATEADDB.MinimumWidth = 6;
             this.DATEADDB.Name = "DATEADDB";
             this.DATEADDB.ReadOnly = true;
-            this.DATEADDB.Width = 117;
+            this.DATEADDB.Width = 129;
             // 
             // guna2GroupBox1
             // 
@@ -419,7 +419,7 @@
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(531, 61);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(162, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(173, 24);
             this.guna2HtmlLabel4.TabIndex = 11;
             this.guna2HtmlLabel4.Text = "Year of Publication";
             // 
@@ -431,7 +431,7 @@
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(288, 55);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(58, 22);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(62, 24);
             this.guna2HtmlLabel3.TabIndex = 9;
             this.guna2HtmlLabel3.Text = "Author";
             // 
@@ -476,7 +476,7 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(14, 55);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(78, 22);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(84, 24);
             this.guna2HtmlLabel2.TabIndex = 7;
             this.guna2HtmlLabel2.Text = "Category";
             // 
@@ -501,16 +501,16 @@
             this.dtgv.AllowDrop = true;
             this.dtgv.AllowUserToAddRows = false;
             this.dtgv.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dtgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgv.ColumnHeadersHeight = 28;
             this.dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -523,14 +523,14 @@
             this.BORROWEDCOUNT,
             this.DATEADDB,
             this.BRSTATUS});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv.Location = new System.Drawing.Point(0, 40);
@@ -571,7 +571,7 @@
             this.BOOKID.MinimumWidth = 6;
             this.BOOKID.Name = "BOOKID";
             this.BOOKID.ReadOnly = true;
-            this.BOOKID.Width = 51;
+            this.BOOKID.Width = 58;
             // 
             // BTILTLE
             // 
@@ -580,7 +580,7 @@
             this.BTILTLE.MinimumWidth = 6;
             this.BTILTLE.Name = "BTILTLE";
             this.BTILTLE.ReadOnly = true;
-            this.BTILTLE.Width = 79;
+            this.BTILTLE.Width = 87;
             // 
             // FULLNAME
             // 
@@ -589,7 +589,7 @@
             this.FULLNAME.MinimumWidth = 6;
             this.FULLNAME.Name = "FULLNAME";
             this.FULLNAME.ReadOnly = true;
-            this.FULLNAME.Width = 104;
+            this.FULLNAME.Width = 113;
             // 
             // PNAME
             // 
@@ -598,7 +598,7 @@
             this.PNAME.MinimumWidth = 6;
             this.PNAME.Name = "PNAME";
             this.PNAME.ReadOnly = true;
-            this.PNAME.Width = 128;
+            this.PNAME.Width = 141;
             // 
             // CNAME
             // 
@@ -607,7 +607,7 @@
             this.CNAME.MinimumWidth = 6;
             this.CNAME.Name = "CNAME";
             this.CNAME.ReadOnly = true;
-            this.CNAME.Width = 126;
+            this.CNAME.Width = 137;
             // 
             // PUBLICATIONYEAR
             // 
@@ -616,7 +616,7 @@
             this.PUBLICATIONYEAR.MinimumWidth = 6;
             this.PUBLICATIONYEAR.Name = "PUBLICATIONYEAR";
             this.PUBLICATIONYEAR.ReadOnly = true;
-            this.PUBLICATIONYEAR.Width = 78;
+            this.PUBLICATIONYEAR.Width = 88;
             // 
             // BORROWEDCOUNT
             // 
@@ -625,7 +625,7 @@
             this.BORROWEDCOUNT.MinimumWidth = 6;
             this.BORROWEDCOUNT.Name = "BORROWEDCOUNT";
             this.BORROWEDCOUNT.ReadOnly = true;
-            this.BORROWEDCOUNT.Width = 165;
+            this.BORROWEDCOUNT.Width = 174;
             // 
             // btnLoad
             // 

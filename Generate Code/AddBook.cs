@@ -20,12 +20,6 @@ namespace LMS.Generate_Code
         {
             InitializeComponent();
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddBook_Load(object sender, EventArgs e)
         {
             q = "SELECT [NAME] FROM CATEGORIES;";
@@ -253,6 +247,20 @@ namespace LMS.Generate_Code
             MessageBox.Show("Book updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             AddBook_Load(sender, e);
             ClearAddBookBox();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to exit?", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                grbAddAuthor.Visible=false;
+            }
+            else
+            {
+                MessageBox.Show("Exit cancelled. Continue your activity ❤️.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Focus();
+            }
         }
 
         private void ClearAddBookBox()
