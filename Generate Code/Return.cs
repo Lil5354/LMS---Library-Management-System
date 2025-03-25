@@ -48,7 +48,7 @@ namespace LMS.Generate_Code
                 COUNT(BT.TICKETID) AS [Number of Borrowed Books]
             FROM 
                 READERS R
-                INNER JOIN BORROWINGTICKETS BT ON R.READERID = BT.READERID AND BT.[STATUS] = 'Borrowing'
+                INNER JOIN BORROWINGTICKETS BT ON R.READERID = BT.READERID AND BT.[STATUS] = N'Borrowing'
             GROUP BY 
                 R.READERID, R.FULLNAME, R.EMAIL, R.PHONE, R.[ADDRESS], R.DATEOFBIRTH, R.REGISTRATIONDATE;";
             DTLibrary.Instance.LoadList(query, dtgvReaders);

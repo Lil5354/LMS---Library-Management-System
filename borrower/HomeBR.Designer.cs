@@ -370,7 +370,7 @@
             this.panelBook.BackColor = System.Drawing.Color.Transparent;
             this.panelBook.BorderRadius = 20;
             this.panelBook.FillColor = System.Drawing.Color.White;
-            this.panelBook.Location = new System.Drawing.Point(252, 136);
+            this.panelBook.Location = new System.Drawing.Point(252, 113);
             this.panelBook.Name = "panelBook";
             this.panelBook.Size = new System.Drawing.Size(841, 732);
             this.panelBook.TabIndex = 33;
@@ -393,8 +393,8 @@
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1124, 892);
-            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.panelBook);
+            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnMinSize);
             this.Controls.Add(this.btnMaxSize);
             this.Controls.Add(btnClose);

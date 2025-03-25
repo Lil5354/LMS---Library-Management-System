@@ -60,8 +60,8 @@ CREATE TABLE LIBRARIANS (
     LIBRARIANID INT PRIMARY KEY IDENTITY(1, 1),
 	IDSTAFF    NVARCHAR(10) UNIQUE NOT NULL,
 	FULLNAME   NVARCHAR(50) NOT NULL,
-	EMAIL      NVARCHAR(50),
-	PHONE      NVARCHAR(11) NOT NULL,
+	EMAIL      NVARCHAR(50) UNIQUE NOT NULL,
+	PHONE      NVARCHAR(11) UNIQUE NOT NULL,
 	DOB        DATE NOT NULL CHECK (DOB <= GETDATE()),
 	[PASSWORD] NVARCHAR(50) NOT NULL CHECK(LEN([PASSWORD]) >= 6) DEFAULT 'lms2025',
 	[ROLE]     NVARCHAR(20) CHECK([ROLE] IN ('Manager', 'Librarian')),
@@ -91,13 +91,13 @@ GO
 CREATE TABLE BORROWINGTICKETS (
     TICKETID INT PRIMARY KEY IDENTITY(1, 1),
     READERID INT NOT NULL,
-    LIBRARIANID NVARCHAR(10) NOT NULL,
-    BOOKID INT NOT NULL,
+    LIBRARIANID NVARCHAR(10) NULL,
+    BOOKID INT NOT NULL, -- Added BOOKID column
     BORROWDATE DATE DEFAULT GETDATE(),
     DUEDATE DATE NOT NULL,
     RETURNDATE DATE,
-    [STATUS] NVARCHAR(50) NOT NULL CHECK([STATUS] IN ('Đang mượn','Đang chờ duyệt', 'Đã trả','Quá hạn')) DEFAULT 'Đang chờ duyệt',
-    APPROVAL_STATUS NVARCHAR(50) NOT NULL CHECK(APPROVAL_STATUS IN ('Chờ duyệt', 'Đã duyệt', 'Từ chối')) DEFAULT 'Chờ duyệt',
+    [STATUS] NVARCHAR(50) NULL CHECK([STATUS] IN ('Borrowing', 'Restored','Waiting')) DEFAULT 'Waiting',
+    APPROVAL_STATUS NVARCHAR(50) NOT NULL CHECK(APPROVAL_STATUS IN ('Waiting', 'Approve', 'Decline')) DEFAULT 'Waiting',
     CONSTRAINT FK_BORROWINGTICKETS_READERS FOREIGN KEY (READERID) REFERENCES READERS(READERID),
     CONSTRAINT FK_BORROWINGTICKETS_LIBRARIANS FOREIGN KEY (LIBRARIANID) REFERENCES LIBRARIANS(IDSTAFF),
     CONSTRAINT FK_BORROWINGTICKETS_BOOKS FOREIGN KEY (BOOKID) REFERENCES BOOKS(BOOKID)
@@ -112,6 +112,87 @@ CREATE TABLE RETURNTICKETS (
     CONSTRAINT FK_RETURNTICKETS_BORROWINGTICKETS FOREIGN KEY (TICKETID) REFERENCES BORROWINGTICKETS(TICKETID),
     CONSTRAINT FK_RETURNTICKETS_LIBRARIANS FOREIGN KEY (LIBRARIANID) REFERENCES LIBRARIANS(IDSTAFF)
 );
+GO
+--TRIGGER
+CREATE TRIGGER TRG_BORROWINGTICKETS_AND_RETURNTICKETS
+ON BORROWINGTICKETS
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    -- Kiểm tra nếu có bản ghi được cập nhật hoặc chèn
+    IF EXISTS (SELECT 1 FROM INSERTED)
+    BEGIN
+        -- Xử lý khi APPROVAL_STATUS được cập nhật thành 'Approve'
+        IF UPDATE(APPROVAL_STATUS)
+        BEGIN
+            -- Cập nhật STATUS thành 'Borrowing' nếu APPROVAL_STATUS là 'Approve'
+            UPDATE BORROWINGTICKETS
+            SET [STATUS] = 'Borrowing'
+            WHERE TICKETID IN (
+                SELECT TICKETID
+                FROM INSERTED
+                WHERE APPROVAL_STATUS = 'Approve'
+            );
+
+            -- Tăng BORROWEDCOUNT của bảng BOOKS lên 1
+            UPDATE BOOKS
+            SET BORROWEDCOUNT = BORROWEDCOUNT + 1
+            WHERE BOOKID IN (
+                SELECT BOOKID
+                FROM INSERTED
+                WHERE APPROVAL_STATUS = 'Approve'
+            );
+        END;
+
+        -- Xử lý khi STATUS là 'Borrowing' hoặc 'Restored'
+        IF EXISTS (
+            SELECT 1
+            FROM INSERTED
+            WHERE [STATUS] IN ('Borrowing', 'Restored') AND APPROVAL_STATUS != 'Approve'
+        )
+        BEGIN
+            -- Cập nhật APPROVAL_STATUS thành 'Approve' nếu STATUS là 'Borrowing' hoặc 'Restored'
+            UPDATE BORROWINGTICKETS
+            SET APPROVAL_STATUS = 'Approve'
+            WHERE TICKETID IN (
+                SELECT TICKETID
+                FROM INSERTED
+                WHERE [STATUS] IN ('Borrowing', 'Restored') AND APPROVAL_STATUS != 'Approve'
+            );
+        END;
+
+        -- Xử lý khi APPROVAL_STATUS là 'Decline'
+        IF EXISTS (
+            SELECT 1
+            FROM INSERTED
+            WHERE APPROVAL_STATUS = 'Decline' AND [STATUS] IS NOT NULL
+        )
+        BEGIN
+            -- Cập nhật STATUS thành NULL nếu APPROVAL_STATUS là 'Decline'
+            UPDATE BORROWINGTICKETS
+            SET [STATUS] = NULL
+            WHERE TICKETID IN (
+                SELECT TICKETID
+                FROM INSERTED
+                WHERE APPROVAL_STATUS = 'Decline' or APPROVAL_STATUS = 'Waiting'
+            );
+        END;
+    END;
+END;
+GO
+CREATE TRIGGER TRG_RETURNTICKETS_UPDATE_STATUS
+ON RETURNTICKETS
+AFTER INSERT
+AS
+BEGIN
+    -- Cập nhật STATUS của BORROWINGTICKETS thành 'Restored'
+    UPDATE BORROWINGTICKETS
+    SET [STATUS] = 'Restored'
+    WHERE TICKETID IN (SELECT TICKETID FROM INSERTED);
+END;
+GO
+----------------------------------------------------------------------------------------------------------
+--INSERT
 GO
 INSERT INTO AUTHORS (FULLNAME, BIOGRAPHY)
 VALUES 
@@ -238,45 +319,204 @@ INSERT INTO LIBRARIANS (FULLNAME, EMAIL, PHONE, DOB, [PASSWORD], [ROLE], STATUS)
 INSERT INTO LIBRARIANS (FULLNAME, EMAIL, PHONE, DOB, [PASSWORD], [ROLE], STATUS) VALUES 
     (N'Nguyễn Giang Gia Huy',	'huybo@gmail.com',		'0907234567', '2006-08-05', 'huybo123',			'Librarian', 1)
 GO
-INSERT INTO BorrowingTickets (ReaderID, LibrarianID, BookID, BorrowDate, DueDate, Status, APPROVAL_STATUS)
+INSERT INTO BORROWINGTICKETS (READERID, LIBRARIANID, BOOKID, BORROWDATE, DUEDATE, RETURNDATE, STATUS, APPROVAL_STATUS)
 VALUES 
-    (1, 'LB001', 1, '2025-02-01', '2025-02-15', 'Đã trả', 'Đã duyệt'),
-    (2, 'LB002', 3, '2025-02-05', '2025-02-19', 'Đang mượn', 'Đã duyệt'),
-    (1, 'LB003', 4, '2025-02-10', '2025-02-24', 'Đã trả', 'Đã duyệt'),
-    (4, 'LB004', 5, '2025-02-12', '2025-02-26', 'Đang mượn', 'Đã duyệt'),
-    (5, 'LB005', 8, '2025-02-15', '2025-03-01', 'Đã trả', 'Đã duyệt'),
-    (3, 'LB001', 2, '2025-02-18', '2025-03-04', 'Đang mượn', 'Đã duyệt'),
-    (2, 'LB003', 7, '2025-02-20', '2025-03-06', 'Đã trả', 'Đã duyệt'),
-    (5, 'LB002', 9, '2025-02-22', '2025-03-08', 'Đang mượn', 'Đã duyệt'),
-    (1, 'LB004', 2, '2025-02-25', '2025-03-11', 'Đã trả', 'Đã duyệt'),
-    (4, 'LB005', 6, '2025-02-28', '2025-03-14', 'Đang mượn', 'Đã duyệt'),
-    (3, 'LB002', 1, '2025-03-01', '2025-03-15', 'Đã trả', 'Đã duyệt'),
-    (2, 'LB004', 3, '2025-03-03', '2025-03-17', 'Đang mượn', 'Đã duyệt'),
-    (5, 'LB001', 5, '2025-03-05', '2025-03-19', 'Đã trả', 'Đã duyệt'),
-    (1, 'LB003', 2, '2025-03-06', '2025-03-20', 'Đang mượn', 'Đã duyệt'),
-    (4, 'LB005', 4, '2025-03-08', '2025-03-22', 'Đang mượn', 'Đã duyệt'),
-    (2, 'LB001', 7, '2025-03-10', '2025-03-24', 'Đã trả', 'Đã duyệt'),
-    (3, 'LB002', 6, '2025-03-12', '2025-03-26', 'Đang mượn', 'Đã duyệt'),
-    (5, 'LB004', 8, '2025-03-15', '2025-03-29', 'Đang mượn', 'Đã duyệt'),
-    (1, 'LB005', 9, '2025-03-18', '2025-04-01', 'Đã trả', 'Đã duyệt'),
-    (4, 'LB003', 2, '2025-03-20', '2025-04-03', 'Đang mượn', 'Đã duyệt');
-GO
-
+(1, 'LB001', 5, '2022-01-10', '2022-01-24', '2022-01-23', 'Restored', 'Approve'),
+(2, 'LB002', 12, '2022-02-15', '2022-03-01', '2022-03-02', 'Restored', 'Approve'),
+(3, 'LB003', 18, '2022-03-20', '2022-04-03', NULL, 'Borrowing', 'Approve'),
+(4, 'LB004', 23, '2022-04-05', '2022-04-19', '2022-04-20', 'Restored', 'Approve'),
+(5, 'LB005', 31, '2022-05-12', '2022-05-26', '2022-05-25', 'Restored', 'Approve'),
+(1, 'LB001', 7, '2022-06-18', '2022-07-02', '2022-07-03', 'Restored', 'Approve'),
+(2, 'LB002', 14, '2022-07-22', '2022-08-05', NULL, 'Borrowing', 'Approve'),
+(3, 'LB003', 27, '2022-08-30', '2022-09-13', '2022-09-12', 'Restored', 'Approve'),
+(4, 'LB004', 35, '2022-09-15', '2022-09-29', '2022-09-30', 'Restored', 'Approve'),
+(5, 'LB005', 40, '2022-10-10', '2022-10-24', NULL, 'Borrowing', 'Approve'),
+(2, 'LB002', 3, '2023-01-05', '2023-01-19', '2023-01-18', 'Restored', 'Approve'),
+(3, 'LB003', 16, '2023-02-14', '2023-02-28', '2023-03-01', 'Restored', 'Approve'),
+(4, 'LB004', 22, '2023-03-20', '2023-04-03', NULL, 'Borrowing', 'Approve'),
+(5, 'LB005', 29, '2023-04-25', '2023-05-09', '2023-05-10', 'Restored', 'Approve'),
+(1, 'LB001', 8, '2023-05-30', '2023-06-13', '2023-06-12', 'Restored', 'Approve'),
+(2, 'LB002', 11, '2023-06-15', '2023-06-29', '2023-06-30', 'Restored', 'Approve'),
+(3, 'LB003', 19, '2023-07-22', '2023-08-05', NULL, 'Borrowing', 'Approve'),
+(4, 'LB004', 26, '2023-08-10', '2023-08-24', '2023-08-23', 'Restored', 'Approve'),
+(5, 'LB005', 33, '2023-09-05', '2023-09-19', '2023-09-20', 'Restored', 'Approve'),
+(1, 'LB001', 38, '2023-10-12', '2023-10-26', NULL, 'Borrowing', 'Approve'),
+(3, 'LB003', 2, '2024-01-08', '2024-01-22', '2024-01-21', 'Restored', 'Approve'),
+(4, 'LB004', 15, '2024-02-14', '2024-02-28', '2024-02-29', 'Restored', 'Approve'),
+(5, 'LB005', 21, '2024-03-10', '2024-03-24', NULL, 'Borrowing', 'Approve'),
+(1, 'LB001', 24, '2024-04-15', '2024-04-29', '2024-04-30', 'Restored', 'Approve'),
+(2, 'LB002', 30, '2024-05-20', '2024-06-03', '2024-06-02', 'Restored', 'Approve'),
+(3, 'LB003', 6, '2024-06-25', '2024-07-09', '2024-07-10', 'Restored', 'Approve'),
+(4, 'LB004', 13, '2024-07-30', '2024-08-13', NULL, 'Borrowing', 'Approve'),
+(5, 'LB005', 28, '2024-08-15', '2024-08-29', '2024-08-28', 'Restored', 'Approve'),
+(1, 'LB001', 34, '2024-09-10', '2024-09-24', '2024-09-25', 'Restored', 'Approve'),
+(2, 'LB002', 39, '2024-10-05', '2024-10-19', NULL, 'Borrowing', 'Approve'),
+(4, 'LB004', 1, '2025-01-03', '2025-01-17', '2025-01-16', 'Restored', 'Approve'),
+(5, 'LB005', 9, '2025-02-07', '2025-02-21', '2025-02-22', 'Restored', 'Approve'),
+(1, 'LB001', 17, '2025-03-12', '2025-03-26', NULL, 'Borrowing', 'Approve'),
+(2, 'LB002', 20, '2025-04-18', '2025-05-02', '2025-05-03', 'Restored', 'Approve'),
+(3, 'LB003', 25, '2025-05-23', '2025-06-06', '2025-06-05', 'Restored', 'Approve'),
+(4, 'LB004', 32, '2025-06-28', '2025-07-12', '2025-07-13', 'Restored', 'Approve'),
+(5, 'LB005', 36, '2025-07-30', '2025-08-13', NULL, 'Borrowing', 'Approve'),
+(1, 'LB001', 4, '2025-08-15', '2025-08-29', '2025-08-28', 'Restored', 'Approve'),
+(2, 'LB002', 10, '2025-09-20', '2025-10-04', '2025-10-05', 'Restored', 'Approve'),
+(3, 'LB003', 37, '2025-10-25', '2025-11-08', NULL, 'Borrowing', 'Approve');
 INSERT INTO ReturnTickets (TicketID, LibrarianID, ReturnDate, FineAmount)
 VALUES 
-    (1, 'LB001', '2025-02-14', 0),
-    (3, 'LB003', '2025-02-23', 0),
-    (5, 'LB005', '2025-02-28', 0),
-    (7, 'LB003', '2025-03-05', 0),
-    (9, 'LB004', '2025-03-10', 0),
-    (11, 'LB002', '2025-03-14', 0),
-    (13, 'LB001', '2025-03-18', 0),
-    (16, 'LB005', '2025-03-21', 0);
-GO
-
-
+(1, 'LB001', '2022-01-23', 0),
+(2, 'LB002', '2022-03-02', 5000),
+(4, 'LB004', '2022-04-20', 5000),
+(5, 'LB005', '2022-05-25', 0),
+(6, 'LB001', '2022-07-03', 5000),
+(8, 'LB003', '2022-09-12', 0),
+(9, 'LB004', '2022-09-30', 5000),
+(11, 'LB002', '2023-01-18', 0),
+(12, 'LB003', '2023-03-01', 5000),
+(14, 'LB005', '2023-05-10', 5000),
+(15, 'LB001', '2023-06-12', 0),
+(16, 'LB002', '2023-06-30', 5000),
+(18, 'LB004', '2023-08-23', 0),
+(19, 'LB005', '2023-09-20', 5000),
+(21, 'LB003', '2024-01-21', 0),
+(22, 'LB004', '2024-02-29', 5000),
+(24, 'LB001', '2024-04-30', 5000),
+(25, 'LB002', '2024-06-02', 0),
+(26, 'LB003', '2024-07-10', 5000),
+(28, 'LB005', '2024-08-28', 0),
+(29, 'LB001', '2024-09-25', 5000),
+(31, 'LB004', '2025-01-16', 0),
+(32, 'LB005', '2025-02-22', 5000),
+(34, 'LB002', '2025-05-03', 5000),
+(35, 'LB003', '2025-06-05', 0),
+(36, 'LB004', '2025-07-13', 5000),
+(38, 'LB001', '2025-08-28', 0),
+(39, 'LB002', '2025-10-05', 5000);
 -- Update existing records with a default book (optional)
-DECLARE @CategoryName NVARCHAR(100) = ''; DECLARE @AuthorName NVARCHAR(100) = ''; DECLARE @PublicationYear INT = NULL; SET @CategoryName = ''; SET @AuthorName = ''; SET @PublicationYear = NULL
-                SELECT B.BOOKID AS ID, B.TITLE, A.FULLNAME AS AUTHOR, P.NAME AS PUBLISHER, C.NAME AS CATEGORY, B.PUBLICATIONYEAR AS YEAR, B.BORROWEDCOUNT AS [NO.BORROWED], B.DATEADDB AS [DATE ADD], B.STATUS, CASE WHEN EXISTS ( SELECT 1 FROM BORROWINGTICKETS BT WHERE BT.BOOKID = B.BOOKID AND BT.[STATUS] = N'Borrowing' ) THEN 'Borrowing' ELSE 'Available' END AS [BORROW STATUS]
-                FROM BOOKS B INNER JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID INNER JOIN PUBLISHERS P ON B.PUBLISHERID = P.PUBLISHERID 
-                INNER JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID WHERE (@CategoryName = '' OR C.NAME = @CategoryName) AND (@AuthorName = '' OR A.FULLNAME = @AuthorName) AND (@PublicationYear IS NULL OR B.PUBLICATIONYEAR = @PublicationYear);
+SELECT 
+                        IDSTAFF AS ID, 
+                        FULLNAME AS [FULL NAME], 
+                        CONVERT(VARCHAR(10), DOB, 103) AS [D.O.B], 
+                        EMAIL, 
+                        PHONE, 
+                        [ROLE], 
+                        CASE WHEN STATUS = 1 THEN 'ON' ELSE 'OFF' END AS STATUS 
+                      FROM LIBRARIANS 
+                      ORDER BY [STATUS] DESC
+SELECT 
+    B.BOOKID AS [ID],
+    B.TITLE,
+    A.FULLNAME AS AUTHOR,
+    P.NAME AS PUBLISHER,
+    C.NAME AS CATEGORY,
+    B.PUBLICATIONYEAR AS [YEAR],
+    B.BORROWEDCOUNT AS [NO.BORROWED],
+    B.DATEADDB AS [DATE ADD]
+FROM 
+    BOOKS B
+    INNER JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID
+    INNER JOIN PUBLISHERS P ON B.PUBLISHERID = P.PUBLISHERID
+    INNER JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
+WHERE 
+    B.STATUS = 1 
+    AND NOT EXISTS (
+        SELECT 1 
+        FROM BORROWINGTICKETS BT 
+        WHERE BT.BOOKID = B.BOOKID 
+		AND  (BT.[STATUS] = N'Borrowing' OR BT.[APPROVAL_STATUS] = N'Waiting'));
+
+	SELECT 
+		R.READERID,
+		R.FULLNAME AS [Reader Name],
+		R.EMAIL,
+		R.PHONE,
+		R.[ADDRESS],
+		R.DATEOFBIRTH,
+		R.REGISTRATIONDATE,
+		COUNT(BT.TICKETID) AS [Number of Borrowed Books]
+	FROM 
+		READERS R
+		INNER JOIN BORROWINGTICKETS BT ON R.READERID = BT.READERID AND BT.[STATUS] = 'Borrowing'
+	GROUP BY 
+		R.READERID, R.FULLNAME, R.EMAIL, R.PHONE, R.[ADDRESS], R.DATEOFBIRTH, R.REGISTRATIONDATE;
+       
+SELECT 
+    B.TITLE,
+    A.FULLNAME AS [AUTHOR],
+    C.NAME AS [CATEGORY],
+    BT.BORROWDATE AS [BORROW DATE],
+    BT.DUEDATE AS [DUE DATE],
+    BT.RETURNDATE AS [RETURN DATE],
+    CASE 
+        WHEN BT.[STATUS] = 'Restored' THEN 'Restored'
+        WHEN BT.[STATUS] = 'Borrowing' THEN 'Borrowing'
+        ELSE BT.[STATUS] 
+    END AS [STATUS],
+    RT.FINEAMOUNT AS 'FINE AMOUNT'
+FROM 
+    BORROWINGTICKETS BT
+    JOIN BOOKS B ON BT.BOOKID = B.BOOKID
+    JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
+    JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID
+    LEFT JOIN RETURNTICKETS RT ON BT.TICKETID = RT.TICKETID
+WHERE 
+    BT.READERID = 4
+ORDER BY 
+    BT.BORROWDATE DESC;
+SELECT 
+    C.NAME AS CategoryName,
+    COUNT(*) AS TotalReturns,
+    SUM(CASE WHEN BT.RETURNDATE > BT.DUEDATE THEN 1 ELSE 0 END) AS OverdueCount,
+    SUM(CASE WHEN BT.STATUS = 'Restored' THEN 1 ELSE 0 END) AS TotalRestored,
+    CASE 
+        WHEN SUM(CASE WHEN BT.STATUS = 'Restored' THEN 1 ELSE 0 END) > 0
+        THEN SUM(CASE WHEN BT.RETURNDATE > BT.DUEDATE THEN 1 ELSE 0 END) * 100.0 / 
+             SUM(CASE WHEN BT.STATUS = 'Restored' THEN 1 ELSE 0 END)
+        ELSE 0 
+    END AS OverdueRate
+FROM 
+    BORROWINGTICKETS BT
+JOIN 
+    BOOKS B ON BT.BOOKID = B.BOOKID
+JOIN 
+    CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
+WHERE 
+    BT.BORROWDATE BETWEEN '2021-01-01' AND '2025-03-25' 
+    AND BT.APPROVAL_STATUS = 'Approve'
+    AND BT.STATUS = 'Restored' -- Chỉ tính các bản ghi đã trả
+GROUP BY 
+    C.NAME
+ORDER BY 
+    OverdueRate DESC
+
+	SELECT 
+    DATENAME(WEEKDAY, BT.BORROWDATE) AS DayOfWeek,
+    COUNT(BT.TICKETID) AS LoanCount,
+    COUNT(DISTINCT BT.READERID) AS UniqueReaders
+FROM 
+    BORROWINGTICKETS BT
+WHERE 
+    BT.BORROWDATE BETWEEN  '2021-01-01' AND '2025-03-25' 
+    AND BT.APPROVAL_STATUS = 'Approve'
+GROUP BY 
+    DATENAME(WEEKDAY, BT.BORROWDATE),
+    DATEPART(WEEKDAY, BT.BORROWDATE)
+ORDER BY 
+    DATEPART(WEEKDAY, BT.BORROWDATE)
+-----------------
+SELECT 
+    B.TITLE AS [TITLE],
+    R.FULLNAME AS [READER NAME],
+    BT.DUEDATE AS [DUE DATE],
+    DATEDIFF(day, BT.DUEDATE, GETDATE()) AS [DAY OVERDUE],
+    CASE 
+        WHEN DATEDIFF(day, BT.DUEDATE, GETDATE()) > 0 
+        THEN DATEDIFF(day, BT.DUEDATE, GETDATE()) * 5000 
+        ELSE 0 
+    END AS [FINE AMOUNT]
+FROM 
+    BORROWINGTICKETS BT
+    INNER JOIN BOOKS B ON BT.BOOKID = B.BOOKID
+    INNER JOIN READERS R ON BT.READERID = R.READERID
+WHERE 
+    BT.[STATUS] = 'Borrowing' 
+    AND R.READERID=2; 

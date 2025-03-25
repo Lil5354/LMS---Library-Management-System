@@ -326,7 +326,7 @@ namespace LMS.borrower
                 // Check if the book is already borrowed by this user
                 string checkQuery = $"SELECT COUNT(*) FROM BORROWINGTICKETS " +
                                   $"WHERE BOOKID = {bookId} AND READERID = {currentReaderId} " +
-                                  $"AND (STATUS = 'Đang mượn' OR STATUS = 'Đang chờ duyệt')";
+                                  $"AND (STATUS = 'Borrowing' OR STATUS = 'Waiting')";
                 int existingBorrows = Convert.ToInt32(GetDatabase.Instance.ExecuteScalar(checkQuery));
 
                 if (existingBorrows > 0)
@@ -366,7 +366,7 @@ namespace LMS.borrower
                 // Create insert query for BORROWINGTICKETS table - ensure librarian ID exists in LIBRARIANS table
                 string insertQuery = $"INSERT INTO BORROWINGTICKETS (READERID, LIBRARIANID, BOOKID, BORROWDATE, DUEDATE, STATUS, APPROVAL_STATUS) " +
                                    $"VALUES ({currentReaderId}, '{librarianId}', {bookId}, " +
-                                   $"'{borrowDate.ToString("yyyy-MM-dd")}', '{dueDate.ToString("yyyy-MM-dd")}', 'Đang chờ duyệt', 'Chờ duyệt')";
+                                   $"'{borrowDate.ToString("yyyy-MM-dd")}', '{dueDate.ToString("yyyy-MM-dd")}', 'Waiting', 'Waiting')";
 
                 // Execute the insert query
                 int result = GetDatabase.Instance.ExecuteNonQuery(insertQuery);
@@ -415,7 +415,7 @@ namespace LMS.borrower
                               FROM BORROWINGTICKETS bt
                               JOIN BOOKS b ON bt.BOOKID = b.BOOKID
                               WHERE bt.BOOKID = {bookId} AND bt.READERID = {currentReaderId} 
-                              AND (bt.STATUS = 'Đang mượn' OR bt.STATUS = 'Đang chờ duyệt')";
+                              AND (bt.STATUS = 'Borrowing' OR bt.STATUS = 'Waiting')";
 
                 DataTable borrowedData = GetDatabase.Instance.ExecuteQuery(checkQuery);
 
@@ -452,7 +452,7 @@ namespace LMS.borrower
                 if (currentDate > dueDate)
                 {
                     daysLate = (int)(currentDate - dueDate).TotalDays;
-                    fineAmount = daysLate * 10000; // 10,000 VND per day
+                    fineAmount = daysLate * 5000; // 10,000 VND per day
                 }
 
                 // Build information message
@@ -466,13 +466,13 @@ namespace LMS.borrower
                 messageBuilder.AppendLine($"Ngày mượn: {borrowDate.ToString("dd/MM/yyyy")}");
                 messageBuilder.AppendLine($"Hạn trả: {dueDate.ToString("dd/MM/yyyy")}");
 
-                if (status == "Đang chờ duyệt")
+                if (status == "Waiting")
                 {
                     messageBuilder.AppendLine();
                     messageBuilder.AppendLine("Trạng thái: Đang chờ duyệt");
                     messageBuilder.AppendLine("Yêu cầu mượn sách của bạn đang chờ thủ thư phê duyệt.");
                 }
-                else if (status == "Đang mượn")
+                else if (status == "Borrowing")
                 {
                     messageBuilder.AppendLine();
                     if (daysLate > 0)
@@ -513,6 +513,45 @@ namespace LMS.borrower
             }
         }
         private FlowLayoutPanel FlowBooks;
+        private ImageCache bookImageCache = new ImageCache();
+
+        private class ImageCache
+        {
+            private Dictionary<string, Image> cachedImages = new Dictionary<string, Image>();
+            private const int MAX_CACHE_SIZE = 50;
+
+            public Image GetImage(string imagePath)
+            {
+                // Kiểm tra và trả về hình ảnh từ bộ nhớ đệm
+                if (cachedImages.TryGetValue(imagePath, out Image cachedImage))
+                {
+                    return cachedImage;
+                }
+
+                // Nếu không có trong cache, tải hình ảnh
+                try
+                {
+                    Image newImage = File.Exists(imagePath)
+                        ? Image.FromFile(imagePath)
+                        : Properties.Resources.default_book_cover;
+
+                    // Quản lý kích thước bộ nhớ đệm
+                    if (cachedImages.Count >= MAX_CACHE_SIZE)
+                    {
+                        // Loại bỏ hình ảnh cũ nhất nếu cache đầy
+                        string oldestKey = cachedImages.Keys.First();
+                        cachedImages.Remove(oldestKey);
+                    }
+
+                    cachedImages[imagePath] = newImage;
+                    return newImage;
+                }
+                catch
+                {
+                    return Properties.Resources.default_book_cover;
+                }
+            }
+        }
         private void btnCatalog_Click(object sender, EventArgs e)
         {
             lblTime.Visible = false;
@@ -521,11 +560,20 @@ namespace LMS.borrower
             // Tạo FlowLayoutPanel để hiển thị sách
             FlowBooks = new FlowLayoutPanel();
             SetDoubleBuffered(FlowBooks, true);
-
+            SetDoubleBuffered(panelBook, true);
+            FlowBooks.SuspendLayout();
             // Thiết lập thuộc tính cho FlowBooks
             FlowBooks.Dock = DockStyle.Fill;  // Đảm bảo lấp đầy panelBook
             FlowBooks.AutoScroll = true;      // Cho phép cuộn nếu có nhiều sách
+            FlowBooks.AutoScroll = true;
 
+            // Tùy chỉnh thêm để cải thiện trải nghiệm cuộn
+            FlowBooks.AutoScrollMargin = new Size(10, 10);  // Thêm lề cho việc cuộn
+            FlowBooks.AutoScrollMinSize = new Size(panelBook.Width - 20, 0);  // Đảm bảo cuộn đủ rộng
+
+            // Nếu muốn tùy chỉnh thêm thanh cuộn
+            FlowBooks.VerticalScroll.Visible = true;
+            FlowBooks.HorizontalScroll.Visible = false;  //
             // Thêm FlowBooks vào panelBook
             panelBook.Controls.Add(FlowBooks);
 
@@ -574,12 +622,14 @@ namespace LMS.borrower
                         string imagePath = $@"D:\FILE CỦA THẢO\Software PJ\LMS\Image Item/{bookTitle}.jpg";
                         if (File.Exists(imagePath))
                         {
-                            bookCover.Image = Image.FromFile(imagePath);
+                            bookCover.Image = bookImageCache.GetImage(imagePath);
+                            FlowBooks.ResumeLayout(true);
                         }
                         else
                         {
                             // Default book cover if specific cover not found
                             bookCover.Image = Properties.Resources.default_book_cover;
+                            FlowBooks.ResumeLayout(true);
                         }
                     }
                     catch
@@ -819,7 +869,7 @@ FROM
     JOIN AUTHORS A ON B.AUTHORID = A.AUTHORID
     JOIN CATEGORIES C ON B.CATEGORYID = C.CATEGORYID
 WHERE 
-    REPLACE(LTRIM(RTRIM(BT.STATUS)), ' ', '') LIKE N'%Đangmượn%'
+    REPLACE(LTRIM(RTRIM(BT.STATUS)), ' ', '') LIKE N'%Borrowing%'
     AND BT.RETURNDATE IS NULL
     AND BT.READERID = " + currentReaderId + @"
 ORDER BY 
@@ -1240,7 +1290,7 @@ ORDER BY
                     if (currentDate > dueDate)
                     {
                         daysLate = (int)(currentDate - dueDate).TotalDays;
-                        fineAmount = daysLate * 10000; // 10,000 VND per day
+                        fineAmount = daysLate * 5000; // 10,000 VND per day
                     }
 
                     // Build information message
@@ -1268,7 +1318,7 @@ ORDER BY
                         if (daysLate > 0)
                         {
                             messageBuilder.AppendLine($"Sách đã quá hạn {daysLate} ngày!");
-                            messageBuilder.AppendLine($"Phí phạt quá hạn: {fineAmount.ToString("#,##0")} VND");
+                            messageBuilder.AppendLine($"Phí phạt quá hạn: {fineAmount.ToString("#,##0")} VND/day");
                             messageBuilder.AppendLine("Vui lòng liên hệ thủ thư để trả sách.");
                         }
                         else
@@ -1615,7 +1665,7 @@ ORDER BY
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void LoadOverdueData()
+ private void LoadOverdueData()
         {
             try
             {
@@ -1650,7 +1700,7 @@ SELECT
     C.NAME AS Category,
     BT.BORROWDATE AS CheckInDate,
     CAST(DATEDIFF(day, BT.DUEDATE, GETDATE()) AS VARCHAR) + ' days overdue' AS Duration,
-    DATEDIFF(day, BT.DUEDATE, GETDATE()) * 3000 AS Fee
+    DATEDIFF(day, BT.DUEDATE, GETDATE()) * 5000 AS Fee
 FROM 
     BORROWINGTICKETS BT
     JOIN READERS R ON BT.READERID = R.READERID 
@@ -1730,8 +1780,7 @@ ORDER BY
                 // Log the complete exception for debugging
                 Console.WriteLine(ex.ToString());
             }
-        }
-        private void SetupHistoryDataGridView()
+        }        private void SetupHistoryDataGridView()
         {
             try
             {
@@ -1923,7 +1972,7 @@ SELECT
         -- If not returned and overdue, show 'Overdue'
         WHEN GETDATE() > BT.DUEDATE THEN 'Overdue'
         -- If approval status is still 'Chờ duyệt', show 'Pending Approval'
-        WHEN BT.APPROVAL_STATUS = 'Chờ duyệt' THEN 'Pending Approval'
+        WHEN BT.APPROVAL_STATUS = 'Waiting' THEN 'Pending Approval'
         -- Otherwise, if within due date, show 'Borrowing'
         ELSE 'Borrowing'
     END AS Status

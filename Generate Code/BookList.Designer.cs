@@ -32,8 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.BRSTATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpDA = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnHide = new Guna.UI2.WinForms.Guna2Button();
             this.txtDescrip = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,7 +56,6 @@
             this.cbbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.DATEADDB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnSearchAdv = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -61,6 +65,9 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbbCateSearch = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgv = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtSearchBook = new Guna.UI2.WinForms.Guna2TextBox();
             this.BOOKID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BTILTLE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FULLNAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,21 +75,13 @@
             this.CNAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PUBLICATIONYEAR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BORROWEDCOUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtSearchBook = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DATEADDB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BRSTATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GroupBox3.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BRSTATUS
-            // 
-            this.BRSTATUS.HeaderText = "BORROW STATUS";
-            this.BRSTATUS.MinimumWidth = 6;
-            this.BRSTATUS.Name = "BRSTATUS";
-            this.BRSTATUS.ReadOnly = true;
             // 
             // dtpDA
             // 
@@ -92,9 +91,9 @@
             this.dtpDA.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.dtpDA.Checked = true;
             this.dtpDA.FillColor = System.Drawing.Color.White;
-            this.dtpDA.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpDA.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDA.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDA.Location = new System.Drawing.Point(363, 113);
+            this.dtpDA.Location = new System.Drawing.Point(372, 118);
             this.dtpDA.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDA.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDA.Name = "dtpDA";
@@ -112,7 +111,7 @@
             this.btnHide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnHide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnHide.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.btnHide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btnHide.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHide.ForeColor = System.Drawing.Color.White;
             this.btnHide.Location = new System.Drawing.Point(797, 259);
             this.btnHide.Name = "btnHide";
@@ -147,11 +146,11 @@
             // guna2HtmlLabel15
             // 
             this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel15.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel15.Location = new System.Drawing.Point(14, 198);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(89, 20);
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(76, 23);
             this.guna2HtmlLabel15.TabIndex = 31;
             this.guna2HtmlLabel15.Text = "Description";
             // 
@@ -181,11 +180,11 @@
             // 
             this.guna2HtmlLabel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel13.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel13.Location = new System.Drawing.Point(568, 122);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(145, 20);
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(128, 23);
             this.guna2HtmlLabel13.TabIndex = 27;
             this.guna2HtmlLabel13.Text = "Year of Publication";
             // 
@@ -193,11 +192,11 @@
             // 
             this.guna2HtmlLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(268, 124);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(89, 20);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(85, 23);
             this.guna2HtmlLabel9.TabIndex = 22;
             this.guna2HtmlLabel9.Text = "Date Added";
             // 
@@ -227,11 +226,11 @@
             // 
             this.guna2HtmlLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(641, 57);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(52, 20);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(47, 23);
             this.guna2HtmlLabel8.TabIndex = 19;
             this.guna2HtmlLabel8.Text = "Author";
             // 
@@ -261,11 +260,11 @@
             // 
             this.guna2HtmlLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(353, 57);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(73, 20);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(62, 23);
             this.guna2HtmlLabel7.TabIndex = 17;
             this.guna2HtmlLabel7.Text = "Publisher";
             // 
@@ -295,22 +294,22 @@
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(14, 57);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(80, 20);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(67, 23);
             this.guna2HtmlLabel5.TabIndex = 8;
             this.guna2HtmlLabel5.Text = "Book Title";
             // 
             // guna2HtmlLabel10
             // 
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(14, 114);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(71, 20);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(63, 23);
             this.guna2HtmlLabel10.TabIndex = 7;
             this.guna2HtmlLabel10.Text = "Category";
             // 
@@ -354,22 +353,13 @@
             this.guna2GroupBox3.Controls.Add(this.guna2HtmlLabel10);
             this.guna2GroupBox3.Controls.Add(this.cbbCategory);
             this.guna2GroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.guna2GroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox3.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.guna2GroupBox3.Location = new System.Drawing.Point(14, 460);
             this.guna2GroupBox3.Name = "guna2GroupBox3";
             this.guna2GroupBox3.Size = new System.Drawing.Size(954, 324);
             this.guna2GroupBox3.TabIndex = 97;
             this.guna2GroupBox3.Text = "Details";
-            // 
-            // DATEADDB
-            // 
-            this.DATEADDB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.DATEADDB.HeaderText = "DATE ADD";
-            this.DATEADDB.MinimumWidth = 6;
-            this.DATEADDB.Name = "DATEADDB";
-            this.DATEADDB.ReadOnly = true;
-            this.DATEADDB.Width = 129;
             // 
             // guna2GroupBox1
             // 
@@ -384,7 +374,7 @@
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2GroupBox1.Controls.Add(this.cbbCateSearch);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(14, 61);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
@@ -415,11 +405,11 @@
             // 
             this.guna2HtmlLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(531, 61);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(173, 24);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(150, 26);
             this.guna2HtmlLabel4.TabIndex = 11;
             this.guna2HtmlLabel4.Text = "Year of Publication";
             // 
@@ -427,11 +417,11 @@
             // 
             this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(288, 55);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(62, 24);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(56, 26);
             this.guna2HtmlLabel3.TabIndex = 9;
             this.guna2HtmlLabel3.Text = "Author";
             // 
@@ -472,11 +462,11 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("VNI-Vari", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(14, 55);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(84, 24);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(72, 26);
             this.guna2HtmlLabel2.TabIndex = 7;
             this.guna2HtmlLabel2.Text = "Category";
             // 
@@ -505,7 +495,7 @@
             this.dtgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -523,14 +513,14 @@
             this.BORROWEDCOUNT,
             this.DATEADDB,
             this.BRSTATUS});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv.Location = new System.Drawing.Point(0, 40);
@@ -564,69 +554,6 @@
             this.dtgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_CellClick);
             // 
-            // BOOKID
-            // 
-            this.BOOKID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.BOOKID.HeaderText = "ID";
-            this.BOOKID.MinimumWidth = 6;
-            this.BOOKID.Name = "BOOKID";
-            this.BOOKID.ReadOnly = true;
-            this.BOOKID.Width = 58;
-            // 
-            // BTILTLE
-            // 
-            this.BTILTLE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.BTILTLE.HeaderText = "TITLE";
-            this.BTILTLE.MinimumWidth = 6;
-            this.BTILTLE.Name = "BTILTLE";
-            this.BTILTLE.ReadOnly = true;
-            this.BTILTLE.Width = 87;
-            // 
-            // FULLNAME
-            // 
-            this.FULLNAME.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.FULLNAME.HeaderText = "AUTHOR";
-            this.FULLNAME.MinimumWidth = 6;
-            this.FULLNAME.Name = "FULLNAME";
-            this.FULLNAME.ReadOnly = true;
-            this.FULLNAME.Width = 113;
-            // 
-            // PNAME
-            // 
-            this.PNAME.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.PNAME.HeaderText = "PUBLISHER";
-            this.PNAME.MinimumWidth = 6;
-            this.PNAME.Name = "PNAME";
-            this.PNAME.ReadOnly = true;
-            this.PNAME.Width = 141;
-            // 
-            // CNAME
-            // 
-            this.CNAME.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CNAME.HeaderText = "CATEGORY";
-            this.CNAME.MinimumWidth = 6;
-            this.CNAME.Name = "CNAME";
-            this.CNAME.ReadOnly = true;
-            this.CNAME.Width = 137;
-            // 
-            // PUBLICATIONYEAR
-            // 
-            this.PUBLICATIONYEAR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.PUBLICATIONYEAR.HeaderText = "YEAR";
-            this.PUBLICATIONYEAR.MinimumWidth = 6;
-            this.PUBLICATIONYEAR.Name = "PUBLICATIONYEAR";
-            this.PUBLICATIONYEAR.ReadOnly = true;
-            this.PUBLICATIONYEAR.Width = 88;
-            // 
-            // BORROWEDCOUNT
-            // 
-            this.BORROWEDCOUNT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.BORROWEDCOUNT.HeaderText = "NO.BORROWED";
-            this.BORROWEDCOUNT.MinimumWidth = 6;
-            this.BORROWEDCOUNT.Name = "BORROWEDCOUNT";
-            this.BORROWEDCOUNT.ReadOnly = true;
-            this.BORROWEDCOUNT.Width = 174;
-            // 
             // btnLoad
             // 
             this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -653,7 +580,7 @@
             this.guna2GroupBox2.Controls.Add(this.dtgv);
             this.guna2GroupBox2.Controls.Add(this.btnLoad);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.guna2GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox2.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.guna2GroupBox2.Location = new System.Drawing.Point(14, 172);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
@@ -692,6 +619,103 @@
             this.txtSearchBook.TabIndex = 98;
             this.txtSearchBook.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchBook_KeyUp);
             // 
+            // BOOKID
+            // 
+            this.BOOKID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.BOOKID.HeaderText = "ID";
+            this.BOOKID.MinimumWidth = 6;
+            this.BOOKID.Name = "BOOKID";
+            this.BOOKID.ReadOnly = true;
+            this.BOOKID.Width = 51;
+            // 
+            // BTILTLE
+            // 
+            this.BTILTLE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.BTILTLE.DefaultCellStyle = dataGridViewCellStyle3;
+            this.BTILTLE.HeaderText = "TITLE";
+            this.BTILTLE.MinimumWidth = 6;
+            this.BTILTLE.Name = "BTILTLE";
+            this.BTILTLE.ReadOnly = true;
+            this.BTILTLE.Width = 71;
+            // 
+            // FULLNAME
+            // 
+            this.FULLNAME.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.FULLNAME.DefaultCellStyle = dataGridViewCellStyle4;
+            this.FULLNAME.HeaderText = "AUTHOR";
+            this.FULLNAME.MinimumWidth = 6;
+            this.FULLNAME.Name = "FULLNAME";
+            this.FULLNAME.ReadOnly = true;
+            this.FULLNAME.Width = 93;
+            // 
+            // PNAME
+            // 
+            this.PNAME.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.PNAME.DefaultCellStyle = dataGridViewCellStyle5;
+            this.PNAME.HeaderText = "PUBLISHER";
+            this.PNAME.MinimumWidth = 6;
+            this.PNAME.Name = "PNAME";
+            this.PNAME.ReadOnly = true;
+            this.PNAME.Width = 111;
+            // 
+            // CNAME
+            // 
+            this.CNAME.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.CNAME.DefaultCellStyle = dataGridViewCellStyle6;
+            this.CNAME.HeaderText = "CATEGORY";
+            this.CNAME.MinimumWidth = 6;
+            this.CNAME.Name = "CNAME";
+            this.CNAME.ReadOnly = true;
+            this.CNAME.Width = 110;
+            // 
+            // PUBLICATIONYEAR
+            // 
+            this.PUBLICATIONYEAR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.PUBLICATIONYEAR.DefaultCellStyle = dataGridViewCellStyle7;
+            this.PUBLICATIONYEAR.HeaderText = "YEAR";
+            this.PUBLICATIONYEAR.MinimumWidth = 6;
+            this.PUBLICATIONYEAR.Name = "PUBLICATIONYEAR";
+            this.PUBLICATIONYEAR.ReadOnly = true;
+            this.PUBLICATIONYEAR.Width = 73;
+            // 
+            // BORROWEDCOUNT
+            // 
+            this.BORROWEDCOUNT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.BORROWEDCOUNT.DefaultCellStyle = dataGridViewCellStyle8;
+            this.BORROWEDCOUNT.HeaderText = "NO.BORROWED";
+            this.BORROWEDCOUNT.MinimumWidth = 6;
+            this.BORROWEDCOUNT.Name = "BORROWEDCOUNT";
+            this.BORROWEDCOUNT.ReadOnly = true;
+            this.BORROWEDCOUNT.Width = 139;
+            // 
+            // DATEADDB
+            // 
+            this.DATEADDB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DATEADDB.HeaderText = "DATE ADD";
+            this.DATEADDB.MinimumWidth = 6;
+            this.DATEADDB.Name = "DATEADDB";
+            this.DATEADDB.ReadOnly = true;
+            this.DATEADDB.Width = 108;
+            // 
+            // BRSTATUS
+            // 
+            this.BRSTATUS.HeaderText = "BORROW STATUS";
+            this.BRSTATUS.MinimumWidth = 6;
+            this.BRSTATUS.Name = "BRSTATUS";
+            this.BRSTATUS.ReadOnly = true;
+            // 
             // BookList
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -715,8 +739,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn BRSTATUS;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpDA;
         private Guna.UI2.WinForms.Guna2Button btnHide;
         private Guna.UI2.WinForms.Guna2TextBox txtDescrip;
@@ -734,7 +756,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbbCategory;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox3;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DATEADDB;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2Button btnSearchAdv;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
@@ -744,6 +765,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2ComboBox cbbCateSearch;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv;
+        private Guna.UI2.WinForms.Guna2Button btnLoad;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearchBook;
         private System.Windows.Forms.DataGridViewTextBoxColumn BOOKID;
         private System.Windows.Forms.DataGridViewTextBoxColumn BTILTLE;
         private System.Windows.Forms.DataGridViewTextBoxColumn FULLNAME;
@@ -751,8 +775,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CNAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn PUBLICATIONYEAR;
         private System.Windows.Forms.DataGridViewTextBoxColumn BORROWEDCOUNT;
-        private Guna.UI2.WinForms.Guna2Button btnLoad;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchBook;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DATEADDB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BRSTATUS;
     }
 }
