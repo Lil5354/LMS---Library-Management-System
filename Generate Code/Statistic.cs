@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using ClosedXML.Excel;
 using LMS.Proccess;
 
 namespace LMS.Generate_Code
@@ -835,10 +836,254 @@ namespace LMS.Generate_Code
                 }
             }
         }
+        private void ExportOverallStatistics(string filePath)
+        {
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Overall Statistics");
 
+                // Thêm dữ liệu từ chartTopBooks (Most Borrowed Books)
+                worksheet.Cell(1, 1).Value = "Most Borrowed Books";
+                worksheet.Cell(2, 1).Value = "Book Title";
+                worksheet.Cell(2, 2).Value = "Borrow Count";
+
+                int row = 3;
+                foreach (var point in chartTopBooks.Series[0].Points)
+                {
+                    worksheet.Cell(row, 1).Value = point.AxisLabel;
+                    worksheet.Cell(row, 2).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartBorrowingStatus (Borrowing Status)
+                worksheet.Cell(1, 4).Value = "Borrowing Status";
+                worksheet.Cell(2, 4).Value = "Status";
+                worksheet.Cell(2, 5).Value = "Count";
+
+                row = 3;
+                foreach (var point in chartBorrowingStatus.Series[0].Points)
+                {
+                    worksheet.Cell(row, 4).Value = point.AxisLabel;
+                    worksheet.Cell(row, 5).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartMainStats (Monthly/Yearly Statistics)
+                worksheet.Cell(1, 7).Value = "Time Statistics";
+                worksheet.Cell(2, 7).Value = "Period";
+                worksheet.Cell(2, 8).Value = "Total Loans";
+                worksheet.Cell(2, 9).Value = "Returned Loans";
+                worksheet.Cell(2, 10).Value = "Unique Readers";
+
+                row = 3;
+                for (int i = 0; i < chartMainStats.Series[0].Points.Count; i++)
+                {
+                    worksheet.Cell(row, 7).Value = chartMainStats.Series[0].Points[i].AxisLabel;
+                    worksheet.Cell(row, 8).Value = chartMainStats.Series[0].Points[i].YValues[0];
+                    worksheet.Cell(row, 9).Value = chartMainStats.Series[1].Points[i].YValues[0];
+                    worksheet.Cell(row, 10).Value = chartMainStats.Series[2].Points[i].YValues[0];
+                    row++;
+                }
+
+                workbook.SaveAs(filePath);
+            }
+        }
+
+        private void ExportCategoryStatistics(string filePath)
+        {
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Category Statistics");
+
+                // Thêm dữ liệu từ chartTopBooks (Category Popularity)
+                worksheet.Cell(1, 1).Value = "Category Popularity";
+                worksheet.Cell(2, 1).Value = "Category";
+                worksheet.Cell(2, 2).Value = "Loan Count";
+
+                int row = 3;
+                foreach (var point in chartTopBooks.Series[0].Points)
+                {
+                    worksheet.Cell(row, 1).Value = point.AxisLabel;
+                    worksheet.Cell(row, 2).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartBorrowingStatus (Category Overdue Rate)
+                worksheet.Cell(1, 4).Value = "Category Overdue Rate";
+                worksheet.Cell(2, 4).Value = "Category";
+                worksheet.Cell(2, 5).Value = "Overdue Rate (%)";
+
+                row = 3;
+                foreach (var point in chartBorrowingStatus.Series[0].Points)
+                {
+                    worksheet.Cell(row, 4).Value = point.AxisLabel;
+                    worksheet.Cell(row, 5).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartMainStats (Average Book Age)
+                worksheet.Cell(1, 7).Value = "Average Book Age by Category";
+                worksheet.Cell(2, 7).Value = "Category";
+                worksheet.Cell(2, 8).Value = "Average Age (Years)";
+
+                row = 3;
+                foreach (var point in chartMainStats.Series[0].Points)
+                {
+                    worksheet.Cell(row, 7).Value = point.AxisLabel;
+                    worksheet.Cell(row, 8).Value = point.YValues[0];
+                    row++;
+                }
+
+                workbook.SaveAs(filePath);
+            }
+        }
+
+        private void ExportReaderStatistics(string filePath)
+        {
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Reader Statistics");
+
+                // Thêm dữ liệu từ chartTopBooks (Most Active Readers)
+                worksheet.Cell(1, 1).Value = "Most Active Readers";
+                worksheet.Cell(2, 1).Value = "Reader Name";
+                worksheet.Cell(2, 2).Value = "Loan Count";
+
+                int row = 3;
+                foreach (var point in chartTopBooks.Series[0].Points)
+                {
+                    worksheet.Cell(row, 1).Value = point.AxisLabel;
+                    worksheet.Cell(row, 2).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartBorrowingStatus (Reader Age Groups)
+                worksheet.Cell(1, 4).Value = "Reader Age Groups";
+                worksheet.Cell(2, 4).Value = "Age Group";
+                worksheet.Cell(2, 5).Value = "Reader Count";
+
+                row = 3;
+                foreach (var point in chartBorrowingStatus.Series[0].Points)
+                {
+                    worksheet.Cell(row, 4).Value = point.AxisLabel;
+                    worksheet.Cell(row, 5).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartMainStats (Reader Location)
+                worksheet.Cell(1, 7).Value = "Reader Location Distribution";
+                worksheet.Cell(2, 7).Value = "Location";
+                worksheet.Cell(2, 8).Value = "Reader Count";
+
+                row = 3;
+                foreach (var point in chartMainStats.Series[0].Points)
+                {
+                    worksheet.Cell(row, 7).Value = point.AxisLabel;
+                    worksheet.Cell(row, 8).Value = point.YValues[0];
+                    row++;
+                }
+
+                workbook.SaveAs(filePath);
+            }
+        }
+
+        private void ExportBorrowingTrends(string filePath)
+        {
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Borrowing Trends");
+
+                // Thêm dữ liệu từ chartTopBooks (Hourly Patterns)
+                worksheet.Cell(1, 1).Value = "Borrowing by Hour";
+                worksheet.Cell(2, 1).Value = "Hour";
+                worksheet.Cell(2, 2).Value = "Loan Count";
+
+                int row = 3;
+                foreach (var point in chartTopBooks.Series[0].Points)
+                {
+                    worksheet.Cell(row, 1).Value = point.AxisLabel;
+                    worksheet.Cell(row, 2).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartBorrowingStatus (Loan Duration)
+                worksheet.Cell(1, 4).Value = "Loan Duration";
+                worksheet.Cell(2, 4).Value = "Duration";
+                worksheet.Cell(2, 5).Value = "Count";
+
+                row = 3;
+                foreach (var point in chartBorrowingStatus.Series[0].Points)
+                {
+                    worksheet.Cell(row, 4).Value = point.AxisLabel;
+                    worksheet.Cell(row, 5).Value = point.YValues[0];
+                    row++;
+                }
+
+                // Thêm dữ liệu từ chartMainStats (Overdue vs On Time)
+                worksheet.Cell(1, 7).Value = "Return Status Over Time";
+                worksheet.Cell(2, 7).Value = "Date";
+                worksheet.Cell(2, 8).Value = "On Time";
+                worksheet.Cell(2, 9).Value = "Overdue";
+
+                row = 3;
+                for (int i = 0; i < chartMainStats.Series[0].Points.Count; i++)
+                {
+                    worksheet.Cell(row, 7).Value = chartMainStats.Series[0].Points[i].AxisLabel;
+                    worksheet.Cell(row, 8).Value = chartMainStats.Series[1].Points[i].YValues[0];
+                    worksheet.Cell(row, 9).Value = chartMainStats.Series[0].Points[i].YValues[0];
+                    row++;
+                }
+
+                workbook.SaveAs(filePath);
+            }
+        }
         private void btnClearFilter_Click(object sender, EventArgs e)
         {
             ClearAllCharts();
+        }
+
+        private void btnExportFile_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                {
+                    saveFileDialog.Filter = "Excel Files|*.xlsx";
+                    saveFileDialog.Title = "Save Chart Data as Excel";
+                    saveFileDialog.FileName = $"Library_Statistics_{DateTime.Now:yyyyMMdd}.xlsx";
+
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string filePath = saveFileDialog.FileName;
+
+                        // Xác định loại thống kê đang hiển thị
+                        string selectedTab = cbbFilterStatistic.Text;
+                        switch (selectedTab)
+                        {
+                            case "OVERALL STATISTICS":
+                                ExportOverallStatistics(filePath);
+                                break;
+                            case "BOOK CATEGORIES":
+                                ExportCategoryStatistics(filePath);
+                                break;
+                            case "READER ANALYSIS":
+                                ExportReaderStatistics(filePath);
+                                break;
+                            case "BORROWING TRENDS":
+                                ExportBorrowingTrends(filePath);
+                                break;
+                        }
+
+                        MessageBox.Show("Export to Excel successfully!", "Success",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error exporting to Excel: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

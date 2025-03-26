@@ -40,7 +40,7 @@
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dtpEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExportFile = new Guna.UI2.WinForms.Guna2Button();
             this.btnDisplay = new Guna.UI2.WinForms.Guna2Button();
             this.btnClearFilter = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -72,7 +72,7 @@
             this.guna2GroupBox3.BorderRadius = 15;
             this.guna2GroupBox3.Controls.Add(this.dtpEnd);
             this.guna2GroupBox3.Controls.Add(this.dtpStart);
-            this.guna2GroupBox3.Controls.Add(this.guna2Button2);
+            this.guna2GroupBox3.Controls.Add(this.btnExportFile);
             this.guna2GroupBox3.Controls.Add(this.btnDisplay);
             this.guna2GroupBox3.Controls.Add(this.btnClearFilter);
             this.guna2GroupBox3.Controls.Add(this.guna2HtmlLabel3);
@@ -80,7 +80,7 @@
             this.guna2GroupBox3.Controls.Add(this.guna2HtmlLabel2);
             this.guna2GroupBox3.Controls.Add(this.cbbFilterStatistic);
             this.guna2GroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.guna2GroupBox3.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.guna2GroupBox3.Location = new System.Drawing.Point(12, 12);
             this.guna2GroupBox3.Name = "guna2GroupBox3";
@@ -95,7 +95,7 @@
             this.dtpEnd.BorderThickness = 2;
             this.dtpEnd.Checked = true;
             this.dtpEnd.FillColor = System.Drawing.Color.White;
-            this.dtpEnd.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpEnd.Location = new System.Drawing.Point(286, 124);
             this.dtpEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -112,7 +112,7 @@
             this.dtpStart.BorderThickness = 2;
             this.dtpStart.Checked = true;
             this.dtpStart.FillColor = System.Drawing.Color.White;
-            this.dtpStart.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpStart.Location = new System.Drawing.Point(80, 124);
             this.dtpStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -122,23 +122,24 @@
             this.dtpStart.TabIndex = 55;
             this.dtpStart.Value = new System.DateTime(2025, 3, 17, 20, 36, 17, 988);
             // 
-            // guna2Button2
+            // btnExportFile
             // 
-            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.guna2Button2.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(794, 124);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(135, 45);
-            this.guna2Button2.TabIndex = 54;
-            this.guna2Button2.Text = "Export File";
+            this.btnExportFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExportFile.Animated = true;
+            this.btnExportFile.BorderRadius = 10;
+            this.btnExportFile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportFile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportFile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportFile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
+            this.btnExportFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportFile.ForeColor = System.Drawing.Color.White;
+            this.btnExportFile.Location = new System.Drawing.Point(794, 124);
+            this.btnExportFile.Name = "btnExportFile";
+            this.btnExportFile.Size = new System.Drawing.Size(135, 45);
+            this.btnExportFile.TabIndex = 54;
+            this.btnExportFile.Text = "Export File";
+            this.btnExportFile.Click += new System.EventHandler(this.btnExportFile_Click);
             // 
             // btnDisplay
             // 
@@ -150,7 +151,7 @@
             this.btnDisplay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDisplay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDisplay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.btnDisplay.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDisplay.ForeColor = System.Drawing.Color.White;
             this.btnDisplay.Location = new System.Drawing.Point(507, 124);
             this.btnDisplay.Name = "btnDisplay";
@@ -169,7 +170,7 @@
             this.btnClearFilter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClearFilter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClearFilter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
-            this.btnClearFilter.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearFilter.ForeColor = System.Drawing.Color.White;
             this.btnClearFilter.Location = new System.Drawing.Point(689, 124);
             this.btnClearFilter.Name = "btnClearFilter";
@@ -181,33 +182,33 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(19, 139);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(41, 23);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(52, 20);
             this.guna2HtmlLabel3.TabIndex = 46;
             this.guna2HtmlLabel3.Text = "FROM";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(252, 139);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(20, 23);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(26, 20);
             this.guna2HtmlLabel1.TabIndex = 46;
             this.guna2HtmlLabel1.Text = "TO";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(70)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(19, 58);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(34, 23);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(39, 20);
             this.guna2HtmlLabel2.TabIndex = 46;
             this.guna2HtmlLabel2.Text = "Type";
             // 
@@ -234,7 +235,7 @@
             this.grb1.BorderRadius = 15;
             this.grb1.Controls.Add(this.chartTopBooks);
             this.grb1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.grb1.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.grb1.Location = new System.Drawing.Point(12, 226);
             this.grb1.Name = "grb1";
@@ -265,7 +266,7 @@
             this.grb2.BorderRadius = 15;
             this.grb2.Controls.Add(this.chartBorrowingStatus);
             this.grb2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.grb2.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.grb2.Location = new System.Drawing.Point(701, 226);
             this.grb2.Name = "grb2";
@@ -299,7 +300,7 @@
             this.grb3.Controls.Add(this.rdoYear);
             this.grb3.Controls.Add(this.rdoMonth);
             this.grb3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(201)))), ((int)(((byte)(186)))));
-            this.grb3.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.grb3.Location = new System.Drawing.Point(12, 602);
             this.grb3.Name = "grb3";
@@ -341,11 +342,11 @@
             this.rdoYear.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.rdoYear.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.rdoYear.CheckedState.InnerOffset = -4;
-            this.rdoYear.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.rdoYear.Location = new System.Drawing.Point(252, 10);
             this.rdoYear.Name = "rdoYear";
-            this.rdoYear.Size = new System.Drawing.Size(62, 25);
+            this.rdoYear.Size = new System.Drawing.Size(68, 24);
             this.rdoYear.TabIndex = 6;
             this.rdoYear.Text = "Year";
             this.rdoYear.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
@@ -363,10 +364,10 @@
             this.rdoMonth.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
             this.rdoMonth.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdoMonth.CheckedState.InnerOffset = -4;
-            this.rdoMonth.Font = new System.Drawing.Font("VNI-Vari", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoMonth.Location = new System.Drawing.Point(162, 10);
             this.rdoMonth.Name = "rdoMonth";
-            this.rdoMonth.Size = new System.Drawing.Size(73, 25);
+            this.rdoMonth.Size = new System.Drawing.Size(80, 24);
             this.rdoMonth.TabIndex = 5;
             this.rdoMonth.Text = "Month";
             this.rdoMonth.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(133)))), ((int)(((byte)(100)))));
@@ -406,7 +407,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbbFilterStatistic;
         private Guna.UI2.WinForms.Guna2GroupBox grb1;
         private Guna.UI2.WinForms.Guna2Button btnClearFilter;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnExportFile;
         private Guna.UI2.WinForms.Guna2Button btnDisplay;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpEnd;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpStart;

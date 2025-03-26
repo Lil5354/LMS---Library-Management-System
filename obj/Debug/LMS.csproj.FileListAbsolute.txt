@@ -76,3 +76,28 @@ D:\Thư mục mới\LMS---Library-Management-System\obj\Debug\LMS.csproj.CoreCo
 D:\Thư mục mới\LMS---Library-Management-System\obj\Debug\LMS.csproj.Up2Date
 D:\Thư mục mới\LMS---Library-Management-System\obj\Debug\LMS.exe
 D:\Thư mục mới\LMS---Library-Management-System\obj\Debug\LMS.pdb
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\ClosedXML.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\ClosedXML.Parser.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\ExcelNumberFormat.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\RBush.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\SixLabors.Fonts.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Buffers.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Memory.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Numerics.Vectors.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\ClosedXML.pdb
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\ClosedXML.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\ClosedXML.Parser.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\ExcelNumberFormat.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\RBush.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\SixLabors.Fonts.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Buffers.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Memory.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Numerics.Vectors.xml
+D:\Douments\GitHub\LMS---Library-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
